@@ -3,8 +3,8 @@
   "instances": [
     {
       "slug": "ahnqiraj-temple",
-      "mapId": 531,
       "name": "Ahn'Qiraj Temple",
+      "mapId": 531,
       "directory": "AhnQirajTemple",
       "type": "raid",
       "zone": "Silithus",
@@ -39,8 +39,8 @@
     },
     {
       "slug": "alcaz-prison",
-      "mapId": 2994,
       "name": "Alcaz Prison",
+      "mapId": 2994,
       "directory": "2994",
       "type": "dungeon",
       "zone": null,
@@ -50,8 +50,8 @@
     },
     {
       "slug": "blackfathom-deeps",
-      "mapId": 48,
       "name": "Blackfathom Deeps",
+      "mapId": 48,
       "directory": "Blackfathom",
       "type": "dungeon",
       "zone": "Ashenvale",
@@ -88,8 +88,8 @@
     },
     {
       "slug": "blackmaw-hold",
-      "mapId": 2974,
       "name": "Blackmaw Hold",
+      "mapId": 2974,
       "directory": "2974",
       "type": "dungeon",
       "zone": null,
@@ -99,8 +99,8 @@
     },
     {
       "slug": "blackrock-depths",
-      "mapId": 230,
       "name": "Blackrock Depths",
+      "mapId": 230,
       "directory": "BlackrockDepths",
       "type": "dungeon",
       "zone": "Blackrock Mountain",
@@ -129,8 +129,8 @@
     },
     {
       "slug": "blackrock-spire",
-      "mapId": 229,
       "name": "Blackrock Spire",
+      "mapId": 229,
       "directory": "BlackRockSpire",
       "type": "dungeon",
       "zone": "Blackrock Mountain",
@@ -197,8 +197,8 @@
     },
     {
       "slug": "blackwing-lair",
-      "mapId": 469,
       "name": "Blackwing Lair",
+      "mapId": 469,
       "directory": "BlackwingLair",
       "type": "raid",
       "zone": "Blackrock Mountain",
@@ -241,8 +241,8 @@
     },
     {
       "slug": "burning-of-andorhal",
-      "mapId": 2807,
       "name": "Burning of Andorhal",
+      "mapId": 2807,
       "directory": "2807",
       "type": "dungeon",
       "zone": null,
@@ -252,8 +252,8 @@
     },
     {
       "slug": "caverns-of-time",
-      "mapId": 269,
       "name": "Caverns of Time",
+      "mapId": 269,
       "directory": "CavernsOfTime",
       "type": "dungeon",
       "zone": null,
@@ -263,8 +263,8 @@
     },
     {
       "slug": "city-of-dalaran",
-      "mapId": 2959,
       "name": "City of Dalaran",
+      "mapId": 2959,
       "directory": "2959",
       "type": "dungeon",
       "zone": null,
@@ -274,8 +274,8 @@
     },
     {
       "slug": "deadmines",
-      "mapId": 36,
       "name": "Deadmines",
+      "mapId": 36,
       "directory": "DeadminesInstance",
       "type": "dungeon",
       "zone": "Westfall",
@@ -304,8 +304,8 @@
     },
     {
       "slug": "demon-fall-canyon",
-      "mapId": 2784,
       "name": "Demon Fall Canyon",
+      "mapId": 2784,
       "directory": "2784",
       "type": "dungeon",
       "zone": null,
@@ -315,8 +315,8 @@
     },
     {
       "slug": "dire-maul",
-      "mapId": 429,
       "name": "Dire Maul",
+      "mapId": 429,
       "directory": "DireMaul",
       "type": "dungeon",
       "zone": "Feralas",
@@ -379,8 +379,8 @@
     },
     {
       "slug": "emerald-dream",
-      "mapId": 169,
       "name": "Emerald Dream",
+      "mapId": 169,
       "directory": "EmeraldDream",
       "type": "raid",
       "zone": null,
@@ -390,8 +390,8 @@
     },
     {
       "slug": "excavation-site-wetlands",
-      "mapId": 2998,
       "name": "Excavation Site: Wetlands",
+      "mapId": 2998,
       "directory": "2998",
       "type": "dungeon",
       "zone": null,
@@ -401,8 +401,8 @@
     },
     {
       "slug": "gnomeregan",
-      "mapId": 90,
       "name": "Gnomeregan",
+      "mapId": 90,
       "directory": "GnomeragonInstance",
       "type": "dungeon",
       "zone": "Dun Morogh",
@@ -447,8 +447,8 @@
     },
     {
       "slug": "karazhan-crypts",
-      "mapId": 2875,
       "name": "Karazhan Crypts",
+      "mapId": 2875,
       "directory": "2875",
       "type": "dungeon",
       "zone": null,
@@ -458,8 +458,8 @@
     },
     {
       "slug": "kroldok-stronghold",
-      "mapId": 3039,
       "name": "Krol'dok Stronghold",
+      "mapId": 3039,
       "directory": "3039",
       "type": "dungeon",
       "zone": null,
@@ -469,8 +469,8 @@
     },
     {
       "slug": "manor-mistmantle",
-      "mapId": 3109,
       "name": "Manor Mistmantle",
+      "mapId": 3109,
       "directory": "3109",
       "type": "dungeon",
       "zone": null,
@@ -480,8 +480,8 @@
     },
     {
       "slug": "maraudon",
-      "mapId": 349,
       "name": "Maraudon",
+      "mapId": 349,
       "directory": "Mauradon",
       "type": "dungeon",
       "zone": "Desolace",
@@ -512,8 +512,8 @@
     },
     {
       "slug": "molten-core",
-      "mapId": 409,
       "name": "Molten Core",
+      "mapId": 409,
       "directory": "MoltenCore",
       "type": "raid",
       "zone": "Blackrock Mountain",
@@ -532,8 +532,8 @@
     },
     {
       "slug": "naxxramas-533",
-      "mapId": 533,
       "name": "Naxxramas",
+      "mapId": 533,
       "directory": "Stratholme Raid",
       "type": "raid",
       "zone": "Eastern Plaguelands",
@@ -592,8 +592,8 @@
     },
     {
       "slug": "naxxramas-2921",
-      "mapId": 2921,
       "name": "Naxxramas",
+      "mapId": 2921,
       "directory": "2921",
       "type": "dungeon",
       "zone": null,
@@ -652,8 +652,8 @@
     },
     {
       "slug": "nightmare-grove",
-      "mapId": 2832,
       "name": "Nightmare Grove",
+      "mapId": 2832,
       "directory": "2832",
       "type": "raid",
       "zone": null,
@@ -663,8 +663,8 @@
     },
     {
       "slug": "onyxias-lair",
-      "mapId": 249,
       "name": "Onyxia's Lair",
+      "mapId": 249,
       "directory": "OnyxiaLairInstance",
       "type": "raid",
       "zone": "Dustwallow Marsh",
@@ -683,8 +683,8 @@
     },
     {
       "slug": "ragefire-chasm",
-      "mapId": 389,
       "name": "Ragefire Chasm",
+      "mapId": 389,
       "directory": "OrgrimmarInstance",
       "type": "dungeon",
       "zone": "Orgrimmar",
@@ -705,8 +705,8 @@
     },
     {
       "slug": "razorfen-downs",
-      "mapId": 129,
       "name": "Razorfen Downs",
+      "mapId": 129,
       "directory": "RazorfenDowns",
       "type": "dungeon",
       "zone": "Thousand Needles",
@@ -727,8 +727,8 @@
     },
     {
       "slug": "razorfen-kraul",
-      "mapId": 47,
       "name": "Razorfen Kraul",
+      "mapId": 47,
       "directory": "RazorfenKraulInstance",
       "type": "dungeon",
       "zone": "Southern Barrens",
@@ -749,8 +749,8 @@
     },
     {
       "slug": "ruins-of-ahnqiraj",
-      "mapId": 509,
       "name": "Ruins of Ahn'Qiraj",
+      "mapId": 509,
       "directory": "AhnQiraj",
       "type": "raid",
       "zone": "Silithus",
@@ -769,8 +769,8 @@
     },
     {
       "slug": "ruins-of-lordaeron",
-      "mapId": 2999,
       "name": "Ruins of Lordaeron",
+      "mapId": 2999,
       "directory": "2999",
       "type": "dungeon",
       "zone": null,
@@ -780,8 +780,8 @@
     },
     {
       "slug": "scarlet-enclave",
-      "mapId": 2856,
       "name": "Scarlet Enclave",
+      "mapId": 2856,
       "directory": "2856",
       "type": "raid",
       "zone": "Eastern Plaguelands",
@@ -799,49 +799,88 @@
       ]
     },
     {
-      "slug": "scarlet-monastery",
+      "slug": "scarlet-monastery-graveyard",
+      "name": "Scarlet Monastery: Graveyard",
       "mapId": 189,
-      "name": "Scarlet Monastery",
       "directory": "MonasteryInstances",
       "type": "dungeon",
       "zone": "Tirisfal Glades",
       "art": "scarletmonastery",
       "sources": [
-        "Tirisfal Glades/The Scarlet Monastary - The Graveyard",
-        "Tirisfal Glades/The Scarlet Monastery - The Library",
-        "Tirisfal Glades/The Scarlet Monastery - The Armory",
-        "Tirisfal Glades/The Scarlet Monastery - The Cathedral"
+        "Tirisfal Glades/The Scarlet Monastary - The Graveyard"
       ],
       "floors": [
         {
           "floor": 1,
           "artFloor": 1,
           "label": "Floor 1",
-          "image": "maps/scarlet-monastery/1.webp",
+          "image": "maps/scarlet-monastery-graveyard/1.webp",
           "width": 1002,
           "height": 668
-        },
+        }
+      ]
+    },
+    {
+      "slug": "scarlet-monastery-library",
+      "name": "Scarlet Monastery: Library",
+      "mapId": 189,
+      "directory": "MonasteryInstances",
+      "type": "dungeon",
+      "zone": "Tirisfal Glades",
+      "art": "scarletmonastery",
+      "sources": [
+        "Tirisfal Glades/The Scarlet Monastery - The Library"
+      ],
+      "floors": [
         {
-          "floor": 2,
+          "floor": 1,
           "artFloor": 2,
-          "label": "Floor 2",
-          "image": "maps/scarlet-monastery/2.webp",
+          "label": "Floor 1",
+          "image": "maps/scarlet-monastery-library/1.webp",
           "width": 1002,
           "height": 668
-        },
+        }
+      ]
+    },
+    {
+      "slug": "scarlet-monastery-armory",
+      "name": "Scarlet Monastery: Armory",
+      "mapId": 189,
+      "directory": "MonasteryInstances",
+      "type": "dungeon",
+      "zone": "Tirisfal Glades",
+      "art": "scarletmonastery",
+      "sources": [
+        "Tirisfal Glades/The Scarlet Monastery - The Armory"
+      ],
+      "floors": [
         {
-          "floor": 3,
+          "floor": 1,
           "artFloor": 3,
-          "label": "Floor 3",
-          "image": "maps/scarlet-monastery/3.webp",
+          "label": "Floor 1",
+          "image": "maps/scarlet-monastery-armory/1.webp",
           "width": 1002,
           "height": 668
-        },
+        }
+      ]
+    },
+    {
+      "slug": "scarlet-monastery-cathedral",
+      "name": "Scarlet Monastery: Cathedral",
+      "mapId": 189,
+      "directory": "MonasteryInstances",
+      "type": "dungeon",
+      "zone": "Tirisfal Glades",
+      "art": "scarletmonastery",
+      "sources": [
+        "Tirisfal Glades/The Scarlet Monastery - The Cathedral"
+      ],
+      "floors": [
         {
-          "floor": 4,
+          "floor": 1,
           "artFloor": 4,
-          "label": "Floor 4",
-          "image": "maps/scarlet-monastery/4.webp",
+          "label": "Floor 1",
+          "image": "maps/scarlet-monastery-cathedral/1.webp",
           "width": 1002,
           "height": 668
         }
@@ -849,8 +888,8 @@
     },
     {
       "slug": "scholomance",
-      "mapId": 289,
       "name": "Scholomance",
+      "mapId": 289,
       "directory": "SchoolofNecromancy",
       "type": "dungeon",
       "zone": "Western Plaguelands",
@@ -895,8 +934,8 @@
     },
     {
       "slug": "shadow-hold",
-      "mapId": 2806,
       "name": "Shadow Hold",
+      "mapId": 2806,
       "directory": "2806",
       "type": "dungeon",
       "zone": null,
@@ -906,8 +945,8 @@
     },
     {
       "slug": "shadowfang-keep",
-      "mapId": 33,
       "name": "Shadowfang Keep",
+      "mapId": 33,
       "directory": "Shadowfang",
       "type": "dungeon",
       "zone": "Silverpine Forest",
@@ -976,8 +1015,8 @@
     },
     {
       "slug": "starfall-barrow-den",
-      "mapId": 2817,
       "name": "Starfall Barrow Den",
+      "mapId": 2817,
       "directory": "2817",
       "type": "dungeon",
       "zone": null,
@@ -987,8 +1026,8 @@
     },
     {
       "slug": "storm-cliffs",
-      "mapId": 2791,
       "name": "Storm Cliffs",
+      "mapId": 2791,
       "directory": "2791",
       "type": "raid",
       "zone": null,
@@ -998,8 +1037,8 @@
     },
     {
       "slug": "stormwind-stockade",
-      "mapId": 34,
       "name": "Stormwind Stockade",
+      "mapId": 34,
       "directory": "StormwindJail",
       "type": "dungeon",
       "zone": "Stormwind City",
@@ -1020,8 +1059,8 @@
     },
     {
       "slug": "stratholme",
-      "mapId": 329,
       "name": "Stratholme",
+      "mapId": 329,
       "directory": "Stratholme",
       "type": "dungeon",
       "zone": "Eastern Plaguelands",
@@ -1051,8 +1090,8 @@
     },
     {
       "slug": "sunken-temple",
-      "mapId": 109,
       "name": "Sunken Temple",
+      "mapId": 109,
       "directory": "SunkenTemple",
       "type": "dungeon",
       "zone": "Swamp of Sorrows",
@@ -1071,8 +1110,8 @@
     },
     {
       "slug": "the-crystal-vale",
-      "mapId": 2804,
       "name": "The Crystal Vale",
+      "mapId": 2804,
       "directory": "2804",
       "type": "raid",
       "zone": null,
@@ -1082,8 +1121,8 @@
     },
     {
       "slug": "the-drowned-city",
-      "mapId": 2970,
       "name": "The Drowned City",
+      "mapId": 2970,
       "directory": "2970",
       "type": "dungeon",
       "zone": null,
@@ -1093,8 +1132,8 @@
     },
     {
       "slug": "the-hall-of-thanes",
-      "mapId": 3065,
       "name": "The Hall of Thanes",
+      "mapId": 3065,
       "directory": "3065",
       "type": "dungeon",
       "zone": null,
@@ -1104,8 +1143,8 @@
     },
     {
       "slug": "the-scarab-dais",
-      "mapId": 2902,
       "name": "The Scarab Dais",
+      "mapId": 2902,
       "directory": "2902",
       "type": "dungeon",
       "zone": null,
@@ -1115,8 +1154,8 @@
     },
     {
       "slug": "the-searing-basin",
-      "mapId": 2720,
       "name": "The Searing Basin",
+      "mapId": 2720,
       "directory": "2720",
       "type": "dungeon",
       "zone": null,
@@ -1126,8 +1165,8 @@
     },
     {
       "slug": "the-shapers-terrace",
-      "mapId": 3001,
       "name": "The Shaper's Terrace",
+      "mapId": 3001,
       "directory": "3001",
       "type": "dungeon",
       "zone": null,
@@ -1137,8 +1176,8 @@
     },
     {
       "slug": "the-tainted-scar",
-      "mapId": 2789,
       "name": "The Tainted Scar",
+      "mapId": 2789,
       "directory": "2789",
       "type": "raid",
       "zone": null,
@@ -1148,8 +1187,8 @@
     },
     {
       "slug": "uldaman",
-      "mapId": 70,
       "name": "Uldaman",
+      "mapId": 70,
       "directory": "Uldaman",
       "type": "dungeon",
       "zone": "Badlands",
@@ -1186,8 +1225,8 @@
     },
     {
       "slug": "wailing-caverns",
-      "mapId": 43,
       "name": "Wailing Caverns",
+      "mapId": 43,
       "directory": "WailingCaverns",
       "type": "dungeon",
       "zone": "Northern Barrens",
@@ -1208,8 +1247,8 @@
     },
     {
       "slug": "zulfarrak",
-      "mapId": 209,
       "name": "Zul'Farrak",
+      "mapId": 209,
       "directory": "TanarisInstance",
       "type": "dungeon",
       "zone": "Tanaris",
@@ -1230,8 +1269,8 @@
     },
     {
       "slug": "zulgurub",
-      "mapId": 309,
       "name": "Zul'Gurub",
+      "mapId": 309,
       "directory": "Zul'gurub",
       "type": "raid",
       "zone": "Stranglethorn Vale",

@@ -1,7 +1,7 @@
 {
  "image": "maps-src/Tirisfal Glades/The Scarlet Monastery - The Library/01_sm_library.jpg",
- "instance": "scarlet-monastery",
- "floor": 2,
+ "instance": "scarlet-monastery-library",
+ "floor": 1,
  "floorSize": [
   1002,
   668
@@ -327,7 +327,7 @@
     0.6347
    ],
    [
-    0.8673,
+    0.8683,
     0.6347
    ]
   ],
