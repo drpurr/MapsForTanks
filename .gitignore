@@ -7,3 +7,4 @@ tools/.venv/
 __pycache__/
 CLAUDE.MD
 grapihfy-out/cost.json
+graphify-out/cache/
