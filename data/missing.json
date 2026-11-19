@@ -78,63 +78,15 @@
     "tried": []
   },
   {
-    "slug": "city-of-dalaran",
-    "mapId": 2959,
-    "name": "City of Dalaran",
-    "tried": []
-  },
-  {
-    "slug": "excavation-site-wetlands",
-    "mapId": 2998,
-    "name": "Excavation Site: Wetlands",
-    "tried": []
-  },
-  {
-    "slug": "ruins-of-lordaeron",
-    "mapId": 2999,
-    "name": "Ruins of Lordaeron",
-    "tried": []
-  },
-  {
-    "slug": "the-hall-of-thanes",
-    "mapId": 3065,
-    "name": "The Hall of Thanes",
-    "tried": []
-  },
-  {
     "slug": "manor-mistmantle",
     "mapId": 3109,
     "name": "Manor Mistmantle",
     "tried": []
   },
   {
-    "slug": "the-drowned-city",
-    "mapId": 2970,
-    "name": "The Drowned City",
-    "tried": []
-  },
-  {
-    "slug": "blackmaw-hold",
-    "mapId": 2974,
-    "name": "Blackmaw Hold",
-    "tried": []
-  },
-  {
-    "slug": "alcaz-prison",
-    "mapId": 2994,
-    "name": "Alcaz Prison",
-    "tried": []
-  },
-  {
     "slug": "the-shapers-terrace",
     "mapId": 3001,
     "name": "The Shaper's Terrace",
-    "tried": []
-  },
-  {
-    "slug": "kroldok-stronghold",
-    "mapId": 3039,
-    "name": "Krol'dok Stronghold",
     "tried": []
   }
 ]

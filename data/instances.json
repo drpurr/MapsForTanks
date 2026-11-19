@@ -44,9 +44,38 @@
       "directory": "2994",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Main prison",
+          "image": "maps/alcaz-prison/1.webp",
+          "width": 1920,
+          "height": 1280,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        },
+        {
+          "floor": 2,
+          "artFloor": null,
+          "label": "Maximum Security Unit",
+          "image": "maps/alcaz-prison/2.webp",
+          "width": 1920,
+          "height": 1280,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "blackfathom-deeps",
@@ -93,9 +122,24 @@
       "directory": "2974",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Blackmaw Hold",
+          "image": "maps/blackmaw-hold/1.webp",
+          "width": 1920,
+          "height": 1280,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "blackrock-depths",
@@ -268,9 +312,38 @@
       "directory": "2959",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "City",
+          "image": "maps/city-of-dalaran/1.webp",
+          "width": 1276,
+          "height": 853,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        },
+        {
+          "floor": 2,
+          "artFloor": null,
+          "label": "Sewers",
+          "image": "maps/city-of-dalaran/2.webp",
+          "width": 1276,
+          "height": 860,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "deadmines",
@@ -395,9 +468,24 @@
       "directory": "2998",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Excavation Site",
+          "image": "maps/excavation-site-wetlands/1.webp",
+          "width": 1276,
+          "height": 850,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "gnomeregan",
@@ -463,9 +551,24 @@
       "directory": "3039",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Krol'dok Stronghold",
+          "image": "maps/kroldok-stronghold/1.webp",
+          "width": 1920,
+          "height": 1280,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "manor-mistmantle",
@@ -774,9 +877,24 @@
       "directory": "2999",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Ruins of Lordaeron",
+          "image": "maps/ruins-of-lordaeron/1.webp",
+          "width": 1276,
+          "height": 850,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "scarlet-enclave",
@@ -1126,9 +1244,24 @@
       "directory": "2970",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "The Drowned City",
+          "image": "maps/the-drowned-city/1.webp",
+          "width": 1920,
+          "height": 1280,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "the-hall-of-thanes",
@@ -1137,9 +1270,24 @@
       "directory": "3065",
       "type": "dungeon",
       "zone": null,
-      "art": null,
+      "art": "external",
       "sources": [],
-      "floors": []
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": null,
+          "label": "Hall of Thanes",
+          "image": "maps/the-hall-of-thanes/1.webp",
+          "width": 1276,
+          "height": 855,
+          "credit": {
+            "by": "Santiago Reyes",
+            "work": "Atlas of Azeroth: Forever",
+            "url": "https://www.artstation.com/artwork/lEG15k",
+            "note": "Used with the artist's permission."
+          }
+        }
+      ]
     },
     {
       "slug": "the-scarab-dais",

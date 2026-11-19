@@ -1,30 +1,44 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { MapView } from '../components/MapView'
+import { MapCredit } from '../components/MapCredit'
 import { RouteOverlay } from '../components/RouteOverlay'
 import { ZoomPan } from '../components/ZoomPan'
-import { loadRoute, routeSummary, sectionBase } from '../data'
+import { loadRoute, routeBounds, routeSummary, sectionBase, transitionTarget } from '../data'
 import crestSmall from '../assets/crest-small.webp'
-import type { Instance, Route } from '../types'
+import type { Instance, Marker, Route } from '../types'
 
-type View = { kind: 'section'; id: string } | { kind: 'floor'; floor: number }
-
-export function InstancePage({ inst }: { inst: Instance }) {
+/**
+ * One dungeon. The section is part of the URL so it can be linked, bookmarked and stepped
+ * through with Back: #/i/<slug>/<n> for the n-th route section, #/i/<slug>/map-<floor> for a
+ * map without a route. A bare #/i/<slug> opens the first section.
+ */
+export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
   const [route, setRoute] = useState<Route | null | undefined>(undefined)
-  const [view, setView] = useState<View | null>(null)
+  useEffect(() => { loadRoute(inst.slug).then(setRoute) }, [inst])
+
+  const sections = useMemo(() => route?.sections ?? [], [route])
+  const otherFloors = inst.floors.filter((f) => !sections.some((s) => s.floor === f.floor))
+  const n = sub && /^\d+$/.test(sub) ? Number(sub) : NaN
+  const mapFloor = sub?.match(/^map-(\d+)$/) ? Number(sub.slice(4)) : NaN
+  const secIndex = sections[n - 1] ? n - 1 : !isNaN(mapFloor) || !sections.length ? -1 : 0
+  const sec = secIndex >= 0 ? sections[secIndex] : undefined
+  const floor = sec ? sec.floor : !isNaN(mapFloor) ? mapFloor : inst.floors[0]?.floor
+  const base = sec ? sectionBase(inst, sec) : floor ? sectionBase(inst, { floor }) : null
+  const focus = sec && base ? routeBounds(sec, base.size) ?? undefined : undefined
+  const mapCredit = sec?.baseImage ? undefined : inst.floors.find((f) => f.floor === floor)?.credit
+  const sectionHref = (i: number) => `#/i/${inst.slug}/${i + 1}`
 
   useEffect(() => {
-    loadRoute(inst.slug).then((r) => {
-      setRoute(r)
-      setView(r?.sections.length ? { kind: 'section', id: r.sections[0].id }
-        : inst.floors.length ? { kind: 'floor', floor: 1 } : null)
-    })
-  }, [inst])
+    const where = sec && sections.length > 1 ? `${inst.name}: ${sec.title}` : inst.name
+    document.title = `${where} – Tank Maps`
+  }, [inst, sec, sections.length])
 
   if (route === undefined) return <main className="instance" aria-busy="true" />
-  const sections = route?.sections ?? []
-  const sec = view?.kind === 'section' ? sections.find((s) => s.id === view.id) : undefined
-  const base = sec ? sectionBase(inst, sec) : view?.kind === 'floor' ? sectionBase(inst, { floor: view.floor }) : null
-  const otherFloors = inst.floors.filter((f) => !sections.some((s) => s.floor === f.floor))
+
+  const linkFor = (m: Marker) => {
+    const t = transitionTarget(m, sections, secIndex)
+    return t >= 0 ? { href: sectionHref(t), label: `Go to ${sections[t].title}` } : undefined
+  }
 
   return (
     <main className="instance">
@@ -37,15 +51,15 @@ export function InstancePage({ inst }: { inst: Instance }) {
         </p>
       </header>
 
-      {(sections.length > 1 || otherFloors.length > 0) && (
+      {(sections.length > 1 || (sections.length > 0 && otherFloors.length > 0) || otherFloors.length > 1) && (
         <nav className="steps" aria-label="Route sections, in order">
           {sections.length > 0 && (
             <ol>
               {sections.map((s, i) => (
                 <li key={s.id}>
-                  <button aria-current={sec?.id === s.id ? 'step' : undefined} onClick={() => setView({ kind: 'section', id: s.id })}>
+                  <a href={sectionHref(i)} aria-current={i === secIndex ? 'step' : undefined}>
                     <span className="n">{i + 1}</span>{s.title}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ol>
@@ -54,8 +68,8 @@ export function InstancePage({ inst }: { inst: Instance }) {
             <div className="other-maps">
               <span>{sections.length ? 'Maps without a route' : 'Maps'}</span>
               {otherFloors.map((f) => (
-                <button key={f.floor} aria-current={view?.kind === 'floor' && view.floor === f.floor ? 'page' : undefined}
-                  onClick={() => setView({ kind: 'floor', floor: f.floor })}>{f.label}</button>
+                <a key={f.floor} href={`#/i/${inst.slug}/map-${f.floor}`}
+                  aria-current={!sec && floor === f.floor ? 'page' : undefined}>{f.label}</a>
               ))}
             </div>
           )}
@@ -63,9 +77,9 @@ export function InstancePage({ inst }: { inst: Instance }) {
       )}
 
       {base ? (
-        <ZoomPan key={sec?.id ?? `floor-${base.src}`} aspect={base.size[1] / base.size[0]}>
+        <ZoomPan key={sec?.id ?? `floor-${floor}`} aspect={base.size[1] / base.size[0]} focus={focus}>
           <MapView base={base.src} size={base.size}>
-            {(size) => sec && <RouteOverlay key={sec.id} section={sec} size={size} draw />}
+            {(size) => sec && <RouteOverlay key={sec.id} section={sec} size={size} linkFor={linkFor} draw />}
           </MapView>
         </ZoomPan>
       ) : (
@@ -75,20 +89,21 @@ export function InstancePage({ inst }: { inst: Instance }) {
       )}
 
       <footer className="instance-foot">
-        {sec && <Legend />}
+        {sec && <Legend links={sec.markers.some((m) => linkFor(m))} />}
         {sec?.notes && <p className="note">{sec.notes}</p>}
-        {view?.kind === 'floor' && <p className="credit">No route on this map yet.</p>}
+        {!sec && base && <p className="credit">No route on this map yet.</p>}
       </footer>
       {sec?.sourceUrl && (
         <p className="credit-line">
           Drawn from the <a href={sec.sourceUrl} target="_blank" rel="noreferrer">MapsForTanks guide</a>.
         </p>
       )}
+      {mapCredit && <MapCredit credit={mapCredit} className="credit-line" />}
     </main>
   )
 }
 
-function Legend() {
+function Legend({ links }: { links: boolean }) {
   return (
     <ul className="legend" aria-label="Legend">
       <li><svg viewBox="0 0 30 12" aria-hidden="true"><path className="lg-path" d="M2 8c8-6 14 2 24-3" /></svg>Tank path</li>
@@ -97,6 +112,7 @@ function Legend() {
       <li><svg viewBox="0 0 22 22" aria-hidden="true"><circle className="lg-boss optional" cx="11" cy="11" r="9" /><text x="11" y="15">★</text></svg>Optional boss</li>
       <li><span className="lg-los" aria-hidden="true">LOS</span>Line-of-sight pull spot</li>
       <li><span className="lg-start" aria-hidden="true">Start</span>Dungeon entrance</li>
+      {links && <li><span className="lg-goto" aria-hidden="true">To next area</span>Click to open that map</li>}
     </ul>
   )
 }

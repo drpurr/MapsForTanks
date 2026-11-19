@@ -1,5 +1,5 @@
 {
-  "_doc": "Map.db2 id -> art: world-map dirs in preference order (first one present in the Forever CASC wins); zone; src: maps-src folders with mapsfortanks images; split: list one site entry per wing ({name, artFloor, src}) instead of one multi-floor instance. Instances not listed are matched automatically by name.",
+  "_doc": "Map.db2 id -> art: world-map dirs in preference order (first one present in the Forever CASC wins); zone; src: maps-src folders with mapsfortanks images; split: list one site entry per wing ({name, artFloor, src}) instead of one multi-floor instance; external: maps from maps-src/external/atlas-of-azeroth-forever ({file, label, credit}) for instances the client ships no art for, with credit keys from _credits. Instances not listed are matched automatically by name.",
   "33":  { "art": ["shadowfangkeep"], "zone": "Silverpine Forest", "src": ["Silverpine Forest/Shadowfang Keep"] },
   "34":  { "art": ["thestockade"], "zone": "Stormwind City", "src": ["Stormwind City/Stormwind Stockade"] },
   "36":  { "art": ["thedeadmines"], "zone": "Westfall", "src": ["Westfall/Deadmines"] },
@@ -38,5 +38,17 @@
   "531": { "art": ["ahnqiraj"], "zone": "Silithus" },
   "533": { "art": ["naxxramas"], "zone": "Eastern Plaguelands" },
   "2856": { "art": ["scarletenclave"], "zone": "Eastern Plaguelands" },
+  "_credits": {
+    "atlas-forever": { "by": "Santiago Reyes", "work": "Atlas of Azeroth: Forever",
+                       "url": "https://www.artstation.com/artwork/lEG15k", "note": "Used with the artist's permission." }
+  },
+  "2994": { "external": [{ "file": "alcaz-prison-1.webp", "label": "Main prison", "credit": "atlas-forever" }, { "file": "alcaz-prison-2.webp", "label": "Maximum Security Unit", "credit": "atlas-forever" }] },
+  "2974": { "external": [{ "file": "blackmaw-hold-1.webp", "label": "Blackmaw Hold", "credit": "atlas-forever" }] },
+  "2959": { "external": [{ "file": "city-of-dalaran-1.webp", "label": "City", "credit": "atlas-forever" }, { "file": "city-of-dalaran-2.webp", "label": "Sewers", "credit": "atlas-forever" }] },
+  "2998": { "external": [{ "file": "excavation-site-wetlands-1.webp", "label": "Excavation Site", "credit": "atlas-forever" }] },
+  "3039": { "external": [{ "file": "kroldok-stronghold-1.webp", "label": "Krol'dok Stronghold", "credit": "atlas-forever" }] },
+  "2999": { "external": [{ "file": "ruins-of-lordaeron-1.webp", "label": "Ruins of Lordaeron", "credit": "atlas-forever" }] },
+  "2970": { "external": [{ "file": "the-drowned-city-1.webp", "label": "The Drowned City", "credit": "atlas-forever" }] },
+  "3065": { "external": [{ "file": "the-hall-of-thanes-1.webp", "label": "Hall of Thanes", "credit": "atlas-forever" }] },
   "_skip": [13, 29, 44, 2853]
 }

@@ -1,4 +1,4 @@
-import type { Instance, Registration, Route, Section } from './types'
+import type { Instance, Marker, Registration, Route, Section } from './types'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -38,4 +38,55 @@ export function routeSummary(sections: Section[]) {
   const maps = new Set(sections.map((s) => s.floor)).size
   const b = bosses === 1 ? '1 boss' : `${bosses} bosses`
   return maps > 1 ? `${b} across ${maps} maps` : `${b} on one map`
+}
+
+/**
+ * Normalized box around everything drawn in a section (paths and markers, including how far
+ * their labels extend), padded so nothing touches the frame edge. Null when nothing is drawn.
+ */
+export function routeBounds(sec: Section, [w, h]: [number, number], padPx = 28) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity
+  const add = (x: number, y: number, rx = 0, ry = 0) => {
+    x0 = Math.min(x0, x - rx); x1 = Math.max(x1, x + rx); y0 = Math.min(y0, y - ry); y1 = Math.max(y1, y + ry)
+  }
+  for (const p of [...sec.path, ...sec.boundaries]) for (const [x, y] of p.points) add(x * w, y * h)
+  for (const m of sec.markers) {
+    const [x, y] = [m.pos[0] * w, m.pos[1] * h]
+    if (m.type === 'boss') add(x, y, 15, 15)
+    else if (m.type === 'los') add(x, y, 22, 13)
+    else if (m.type === 'entrance') add(x, y, 32, 15)
+    else add(x, y, ((m.text ?? 'To next area').length * 8 + 12) / 2, 15)
+  }
+  if (!isFinite(x0)) return null
+  return {
+    x0: Math.max(0, (x0 - padPx) / w), y0: Math.max(0, (y0 - padPx) / h),
+    x1: Math.min(1, (x1 + padPx) / w), y1: Math.min(1, (y1 + padPx) / h),
+  }
+}
+
+const IGNORE = new Set(['to', 'from', 'and', 'the', 'of', 'lord', 'lfd', 'end'])
+const words = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter((w) => w.length >= 3 && !IGNORE.has(w))
+const same = (a: string, b: string) => a.slice(0, 5) === b.slice(0, 5)
+
+/**
+ * Which section a transition label leads to: its explicit `toSection`, otherwise the section whose
+ * title shares the most words with the label ("To Dining Hall" -> "Dining Hall"). Ties go to the
+ * nearest section in the label's direction ("From …" looks back, everything else looks forward).
+ * Returns the section index, or -1 when nothing matches.
+ */
+export function transitionTarget(m: Marker, sections: Section[], current: number): number {
+  if (m.type !== 'transition') return -1
+  if (m.toSection) return sections.findIndex((s) => s.id === m.toSection)
+  const text = m.text ?? ''
+  const want = words(text)
+  const back = /^\s*from\b/i.test(text)
+  let best = -1, bestScore = 0, bestDist = Infinity
+  sections.forEach((s, j) => {
+    if (j === current) return
+    const title = words(s.title)
+    const score = want.filter((w) => title.some((t) => same(w, t))).length
+    const dist = back ? (j < current ? current - j : 100 + j) : (j > current ? j - current : 100 + current - j)
+    if (score > bestScore || (score === bestScore && score > 0 && dist < bestDist)) { best = j; bestScore = score; bestDist = dist }
+  })
+  return best
 }

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { MapCredit } from '../components/MapCredit'
 import { MapView } from '../components/MapView'
 import { RouteOverlay } from '../components/RouteOverlay'
 import { loadRoute, routeSummary, sectionBase } from '../data'
@@ -24,6 +25,7 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
   const [query, setQuery] = useState('')
   const [active, setActive] = useState<string | null>(null)
   const cache = useRef(new Map<string, Route | null>())
+  useEffect(() => { document.title = 'Tank Maps – WoW Forever dungeon and raid routes' }, [])
   const [route, setRoute] = useState<Route | null>(null)
 
   const groups = useMemo(() => {
@@ -109,6 +111,10 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
                 {shown.type === 'raid' ? 'Raid' : 'Dungeon'}{shown.zone ? ` in ${shown.zone}` : ''}.{' '}
                 {sec && route ? `${routeSummary(route.sections)}.` : shown.floors.length ? 'No route drawn yet.' : ''}
               </p>
+              {(() => {
+                const credit = shown.floors.find((f) => f.floor === (sec?.floor ?? shown.floors[0]?.floor))?.credit
+                return credit && <MapCredit credit={credit} className="preview-credit" />
+              })()}
               <a className="open" href={`#/i/${shown.slug}`}>{sec ? 'Open route' : shown.floors.length ? 'View maps' : 'View details'}</a>
             </div>
           </aside>

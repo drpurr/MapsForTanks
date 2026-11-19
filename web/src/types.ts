@@ -1,9 +1,18 @@
 export type Pt = [number, number]
 
+/** Credit for maps that aren't the game's own art (e.g. fan-made maps used with permission). */
+export interface MapCredit {
+  by: string
+  work?: string
+  url?: string
+  note?: string
+}
+
 export interface Floor {
   floor: number
-  artFloor: number
+  artFloor: number | null
   label: string
+  credit?: MapCredit
   image: string
   width: number
   height: number

@@ -3,6 +3,8 @@ import type { Marker, Pt, Section } from '../types'
 export interface OverlayHandlers {
   selected?: string | null
   onPick?: (id: string, e: React.PointerEvent) => void
+  /** Viewer only: where a marker links to (transition labels -> their section). */
+  linkFor?: (m: Marker) => { href: string; label: string } | undefined
 }
 
 const pts = (p: Pt[], [w, h]: [number, number]) => p.map(([x, y]) => `${x * w},${y * h}`).join(' ')
@@ -62,7 +64,7 @@ function MarkerGlyph({ m, size, sel }: { m: Marker; size: [number, number]; sel:
  * Draws one section's route in floor-pixel space; used by viewer and editor.
  * `draw` animates the path strokes in (the one motion moment of the site).
  */
-export function RouteOverlay({ section, size, selected, onPick, draw = false }:
+export function RouteOverlay({ section, size, selected, onPick, linkFor, draw = false }:
   { section: Section; size: [number, number]; draw?: boolean } & OverlayHandlers) {
   const pick = (id: string) => (onPick ? { onPointerDown: (e: React.PointerEvent) => onPick(id, e) } : {})
   return (
@@ -87,11 +89,19 @@ export function RouteOverlay({ section, size, selected, onPick, draw = false }:
           />
         </g>
       ))}
-      {section.markers.map((m) => (
-        <g key={m.id} {...pick(m.id)}>
-          <MarkerGlyph m={m} size={size} sel={selected === m.id} />
-        </g>
-      ))}
+      {section.markers.map((m) => {
+        const link = linkFor?.(m)
+        return link ? (
+          <a key={m.id} href={link.href} className="marker-link" aria-label={link.label}>
+            <title>{link.label}</title>
+            <MarkerGlyph m={m} size={size} sel={false} />
+          </a>
+        ) : (
+          <g key={m.id} {...pick(m.id)}>
+            <MarkerGlyph m={m} size={size} sel={selected === m.id} />
+          </g>
+        )
+      })}
     </g>
   )
 }
