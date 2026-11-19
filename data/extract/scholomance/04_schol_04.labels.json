@@ -1,0 +1,51 @@
+{
+ "_title": "Barov Family Vault",
+ "y0": {
+  "kind": "transition",
+  "text": "LFD end / To + from Headmaster"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 8
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 9,
+  "text": "* 9"
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 12
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Chamber"
+ },
+ "y2": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 11,
+   "pos": [
+    0.64,
+    0.31
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 10,
+   "pos": [
+    0.75,
+    0.45
+   ]
+  }
+ ]
+}

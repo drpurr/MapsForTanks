@@ -1,0 +1,11 @@
+{
+ "_title": "The Wall Walk",
+ "y0": {
+  "kind": "transition",
+  "text": "To Vacant Den"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Courtyard"
+ }
+}

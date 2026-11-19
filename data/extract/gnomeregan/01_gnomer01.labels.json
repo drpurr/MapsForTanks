@@ -1,0 +1,15 @@
+{
+ "_title": "The Hall of Gears",
+ "y0": {
+  "kind": "transition",
+  "text": "To Dormitory"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 1
+ },
+ "_entrance": [
+  0.675,
+  0.29
+ ]
+}

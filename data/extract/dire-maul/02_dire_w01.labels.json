@@ -1,0 +1,22 @@
+{
+ "_title": "West: Court of the Highborne",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.243,
+   0.45
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "To + from Capital"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To + from Capital"
+ }
+}

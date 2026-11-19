@@ -1,0 +1,41 @@
+{
+ "_title": "North: Gordok Commons",
+ "b0": {
+  "kind": "boss",
+  "order": 6
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 4,
+  "text": "4*"
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 1
+ },
+ "b5": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b6": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "_entrance": [
+  0.683,
+  0.975
+ ]
+}

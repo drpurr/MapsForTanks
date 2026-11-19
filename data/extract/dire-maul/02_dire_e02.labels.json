@@ -1,0 +1,32 @@
+{
+ "_title": "East: Shrine of Eldretharr",
+ "b0": {
+  "kind": "boss",
+  "order": 5,
+  "pos": [
+   0.59,
+   0.28
+  ]
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 4
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Warpwood"
+ }
+}

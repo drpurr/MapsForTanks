@@ -1,0 +1,25 @@
+{
+ "_title": "Khaz'Goroth's Seat",
+ "b0": {
+  "kind": "boss",
+  "order": 8,
+  "pos": [
+   0.518,
+   0.5
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Hall of Keepers"
+ },
+ "y2": {
+  "kind": "ignore"
+ }
+}

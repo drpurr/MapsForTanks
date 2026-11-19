@@ -1,0 +1,26 @@
+{
+ "_title": "Earth Song Falls (Pristine Waters)",
+ "b0": {
+  "kind": "boss",
+  "order": 1
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 2,
+  "pos": [
+   0.165,
+   0.8
+  ]
+ },
+ "b2": {
+  "kind": "ignore"
+ },
+ "_entrance": [
+  0.285,
+  0.29
+ ]
+}

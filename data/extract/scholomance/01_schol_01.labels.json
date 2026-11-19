@@ -1,0 +1,16 @@
+{
+ "_title": "The Reliquary",
+ "y0": {
+  "kind": "transition",
+  "text": "To Chamber"
+ },
+ "b0": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "_entrance": [
+  0.37,
+  0.67
+ ]
+}

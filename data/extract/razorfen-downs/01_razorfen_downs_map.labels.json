@@ -1,0 +1,43 @@
+{
+ "b0": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b3": {
+  "kind": "ignore"
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.62,
+   0.37
+  ]
+ },
+ "b5": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b6": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b7": {
+  "kind": "boss",
+  "order": 4
+ },
+ "_entrance": [
+  0.195,
+  0.21
+ ]
+}

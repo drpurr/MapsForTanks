@@ -1,0 +1,22 @@
+{
+ "_title": "Lower Observatory",
+ "b0": {
+  "kind": "boss",
+  "order": 4,
+  "pos": [
+   0.55,
+   0.535
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "To Upper Observatory"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Vacant Den"
+ }
+}

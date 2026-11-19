@@ -1,0 +1,46 @@
+{
+ "b0": {
+  "kind": "boss",
+  "order": 7
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 6
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.305,
+   0.5
+  ]
+ },
+ "b5": {
+  "kind": "ignore"
+ },
+ "b6": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b7": {
+  "kind": "boss",
+  "order": 4
+ },
+ "_entrance": [
+  0.435,
+  0.61
+ ],
+ "_note": "Pink arrows (return path) are not extracted by the CV pass; add them in the editor."
+}

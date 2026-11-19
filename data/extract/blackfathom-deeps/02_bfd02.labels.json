@@ -1,0 +1,40 @@
+{
+ "_title": "Moonshrine Sanctum",
+ "y0": {
+  "kind": "transition",
+  "text": "From Temple",
+  "fromFloor": 1
+ },
+ "b0": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3,
+  "text": "3b"
+ },
+ "y1": {
+  "kind": "label",
+  "text": "To extra boss"
+ },
+ "y2": {
+  "kind": "label",
+  "text": "End"
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 4
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 5,
+   "pos": [
+    0.943,
+    0.831
+   ]
+  }
+ ]
+}

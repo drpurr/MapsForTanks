@@ -1,0 +1,32 @@
+{
+ "_title": "East: Warpwood Quarter",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.803,
+   0.43
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "To Shrine"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 2,
+   "pos": [
+    0.511,
+    0.498
+   ]
+  }
+ ],
+ "_entrance": [
+  0.03,
+  0.4
+ ]
+}

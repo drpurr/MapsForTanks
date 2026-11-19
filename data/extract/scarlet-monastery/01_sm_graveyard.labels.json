@@ -1,0 +1,26 @@
+{
+ "_title": "Graveyard",
+ "b0": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.755,
+   0.575
+  ]
+ },
+ "b2": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_entrance": [
+  0.875,
+  0.82
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "_title": "Headmaster's Study",
+ "y0": {
+  "kind": "transition",
+  "text": "To + from Chamber"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 6
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 3
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To Barov"
+ },
+ "y2": {
+  "kind": "transition",
+  "text": "To + from Chamber"
+ },
+ "y3": {
+  "kind": "ignore"
+ },
+ "y4": {
+  "kind": "transition",
+  "text": "To + from Chamber"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 7,
+   "pos": [
+    0.785,
+    0.68
+   ]
+  }
+ ]
+}

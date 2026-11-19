@@ -1,0 +1,26 @@
+{
+ "_title": "Library",
+ "b0": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.318,
+   0.86
+  ]
+ },
+ "b2": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_entrance": [
+  0.1,
+  0.25
+ ]
+}

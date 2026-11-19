@@ -1,0 +1,33 @@
+{
+ "_title": "The Pools of Ask'ar",
+ "b0": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3
+ },
+ "y0": {
+  "kind": "ignore"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To Moonshrine Sanctum",
+  "toFloor": 2
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 1,
+   "pos": [
+    0.356,
+    0.629
+   ]
+  }
+ ],
+ "_entrance": [
+  0.436,
+  0.11
+ ]
+}
