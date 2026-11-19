@@ -1,0 +1,21 @@
+{
+ "_title": "Dining Hall",
+ "y0": {
+  "kind": "transition",
+  "text": "From Courtyard"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To Courtyard"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 2,
+   "pos": [
+    0.3,
+    0.77
+   ]
+  }
+ ]
+}

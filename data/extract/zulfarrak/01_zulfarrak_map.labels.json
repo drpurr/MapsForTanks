@@ -1,0 +1,41 @@
+{
+ "b0": {
+  "kind": "boss",
+  "order": 4
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 1,
+  "text": "* 1"
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 5
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 6,
+   "pos": [
+    0.447,
+    0.32
+   ]
+  }
+ ],
+ "_entrance": [
+  0.54,
+  0.9
+ ]
+}

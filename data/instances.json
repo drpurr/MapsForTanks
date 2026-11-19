@@ -1,0 +1,1252 @@
+{
+  "build": "forever",
+  "instances": [
+    {
+      "slug": "ahnqiraj-temple",
+      "mapId": 531,
+      "name": "Ahn'Qiraj Temple",
+      "directory": "AhnQirajTemple",
+      "type": "raid",
+      "zone": "Silithus",
+      "art": "ahnqiraj",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/ahnqiraj-temple/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/ahnqiraj-temple/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/ahnqiraj-temple/3.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "alcaz-prison",
+      "mapId": 2994,
+      "name": "Alcaz Prison",
+      "directory": "2994",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "blackfathom-deeps",
+      "mapId": 48,
+      "name": "Blackfathom Deeps",
+      "directory": "Blackfathom",
+      "type": "dungeon",
+      "zone": "Ashenvale",
+      "art": "blackfathomdeeps",
+      "sources": [
+        "Ashenvale/Blackfathom Deeps"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/blackfathom-deeps/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/blackfathom-deeps/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/blackfathom-deeps/3.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "blackmaw-hold",
+      "mapId": 2974,
+      "name": "Blackmaw Hold",
+      "directory": "2974",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "blackrock-depths",
+      "mapId": 230,
+      "name": "Blackrock Depths",
+      "directory": "BlackrockDepths",
+      "type": "dungeon",
+      "zone": "Blackrock Mountain",
+      "art": "blackrockdepths",
+      "sources": [
+        "Blackrock Mountain (Searing Gorge - Burning Steppes)/Blackrock Depths - Detention Block (Lower) and Shadowforge City (Upper)"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/blackrock-depths/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/blackrock-depths/2.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "blackrock-spire",
+      "mapId": 229,
+      "name": "Blackrock Spire",
+      "directory": "BlackRockSpire",
+      "type": "dungeon",
+      "zone": "Blackrock Mountain",
+      "art": "blackrockspire",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/blackrock-spire/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/blackrock-spire/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/blackrock-spire/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/blackrock-spire/4.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 5,
+          "artFloor": 5,
+          "label": "Floor 5",
+          "image": "maps/blackrock-spire/5.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 6,
+          "artFloor": 6,
+          "label": "Floor 6",
+          "image": "maps/blackrock-spire/6.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 7,
+          "artFloor": 7,
+          "label": "Floor 7",
+          "image": "maps/blackrock-spire/7.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "blackwing-lair",
+      "mapId": 469,
+      "name": "Blackwing Lair",
+      "directory": "BlackwingLair",
+      "type": "raid",
+      "zone": "Blackrock Mountain",
+      "art": "blackwinglair",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/blackwing-lair/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/blackwing-lair/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/blackwing-lair/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/blackwing-lair/4.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "burning-of-andorhal",
+      "mapId": 2807,
+      "name": "Burning of Andorhal",
+      "directory": "2807",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "caverns-of-time",
+      "mapId": 269,
+      "name": "Caverns of Time",
+      "directory": "CavernsOfTime",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "city-of-dalaran",
+      "mapId": 2959,
+      "name": "City of Dalaran",
+      "directory": "2959",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "deadmines",
+      "mapId": 36,
+      "name": "Deadmines",
+      "directory": "DeadminesInstance",
+      "type": "dungeon",
+      "zone": "Westfall",
+      "art": "thedeadmines",
+      "sources": [
+        "Westfall/Deadmines"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/deadmines/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/deadmines/2.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "demon-fall-canyon",
+      "mapId": 2784,
+      "name": "Demon Fall Canyon",
+      "directory": "2784",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "dire-maul",
+      "mapId": 429,
+      "name": "Dire Maul",
+      "directory": "DireMaul",
+      "type": "dungeon",
+      "zone": "Feralas",
+      "art": "diremaul",
+      "sources": [
+        "Feralas/Dire Maul - East (Warpwood Quarter)",
+        "Feralas/Dire Maul - Capital Gardens (West)",
+        "Feralas/Dire Maul - Gordok Commons (North)"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/dire-maul/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/dire-maul/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/dire-maul/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/dire-maul/4.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 5,
+          "artFloor": 5,
+          "label": "Floor 5",
+          "image": "maps/dire-maul/5.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 6,
+          "artFloor": 6,
+          "label": "Floor 6",
+          "image": "maps/dire-maul/6.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "emerald-dream",
+      "mapId": 169,
+      "name": "Emerald Dream",
+      "directory": "EmeraldDream",
+      "type": "raid",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "excavation-site-wetlands",
+      "mapId": 2998,
+      "name": "Excavation Site: Wetlands",
+      "directory": "2998",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "gnomeregan",
+      "mapId": 90,
+      "name": "Gnomeregan",
+      "directory": "GnomeragonInstance",
+      "type": "dungeon",
+      "zone": "Dun Morogh",
+      "art": "gnomeregan",
+      "sources": [
+        "Dun Morogh/Gnomeregan"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/gnomeregan/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/gnomeregan/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/gnomeregan/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/gnomeregan/4.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "karazhan-crypts",
+      "mapId": 2875,
+      "name": "Karazhan Crypts",
+      "directory": "2875",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "kroldok-stronghold",
+      "mapId": 3039,
+      "name": "Krol'dok Stronghold",
+      "directory": "3039",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "manor-mistmantle",
+      "mapId": 3109,
+      "name": "Manor Mistmantle",
+      "directory": "3109",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "maraudon",
+      "mapId": 349,
+      "name": "Maraudon",
+      "directory": "Mauradon",
+      "type": "dungeon",
+      "zone": "Desolace",
+      "art": "maraudon",
+      "sources": [
+        "Desolace/Mauraudon - The Wicked Grotto (Purple Crystals)",
+        "Desolace/Maraudon - Foulspore Cavern (Orange Crystals)",
+        "Desolace/Maraudon - Earth Song Falls (Pristine Waters)"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/maraudon/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/maraudon/2.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "molten-core",
+      "mapId": 409,
+      "name": "Molten Core",
+      "directory": "MoltenCore",
+      "type": "raid",
+      "zone": "Blackrock Mountain",
+      "art": "moltencore",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/molten-core/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "naxxramas-533",
+      "mapId": 533,
+      "name": "Naxxramas",
+      "directory": "Stratholme Raid",
+      "type": "raid",
+      "zone": "Eastern Plaguelands",
+      "art": "naxxramas",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/naxxramas-533/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/naxxramas-533/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/naxxramas-533/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/naxxramas-533/4.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 5,
+          "artFloor": 5,
+          "label": "Floor 5",
+          "image": "maps/naxxramas-533/5.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 6,
+          "artFloor": 6,
+          "label": "Floor 6",
+          "image": "maps/naxxramas-533/6.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "naxxramas-2921",
+      "mapId": 2921,
+      "name": "Naxxramas",
+      "directory": "2921",
+      "type": "dungeon",
+      "zone": null,
+      "art": "naxxramas",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/naxxramas-2921/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/naxxramas-2921/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/naxxramas-2921/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/naxxramas-2921/4.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 5,
+          "artFloor": 5,
+          "label": "Floor 5",
+          "image": "maps/naxxramas-2921/5.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 6,
+          "artFloor": 6,
+          "label": "Floor 6",
+          "image": "maps/naxxramas-2921/6.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "nightmare-grove",
+      "mapId": 2832,
+      "name": "Nightmare Grove",
+      "directory": "2832",
+      "type": "raid",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "onyxias-lair",
+      "mapId": 249,
+      "name": "Onyxia's Lair",
+      "directory": "OnyxiaLairInstance",
+      "type": "raid",
+      "zone": "Dustwallow Marsh",
+      "art": "onyxiaslair",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/onyxias-lair/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "ragefire-chasm",
+      "mapId": 389,
+      "name": "Ragefire Chasm",
+      "directory": "OrgrimmarInstance",
+      "type": "dungeon",
+      "zone": "Orgrimmar",
+      "art": "ragefire",
+      "sources": [
+        "Orgrimmar/Ragefire Chasm"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/ragefire-chasm/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "razorfen-downs",
+      "mapId": 129,
+      "name": "Razorfen Downs",
+      "directory": "RazorfenDowns",
+      "type": "dungeon",
+      "zone": "Thousand Needles",
+      "art": "razorfendowns",
+      "sources": [
+        "Thousand Needles/Razorfen Downs"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/razorfen-downs/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "razorfen-kraul",
+      "mapId": 47,
+      "name": "Razorfen Kraul",
+      "directory": "RazorfenKraulInstance",
+      "type": "dungeon",
+      "zone": "Southern Barrens",
+      "art": "razorfenkraul",
+      "sources": [
+        "Southern Barrens/Razorfen Kraul"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/razorfen-kraul/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "ruins-of-ahnqiraj",
+      "mapId": 509,
+      "name": "Ruins of Ahn'Qiraj",
+      "directory": "AhnQiraj",
+      "type": "raid",
+      "zone": "Silithus",
+      "art": "ruinsofahnqiraj",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/ruins-of-ahnqiraj/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "ruins-of-lordaeron",
+      "mapId": 2999,
+      "name": "Ruins of Lordaeron",
+      "directory": "2999",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "scarlet-enclave",
+      "mapId": 2856,
+      "name": "Scarlet Enclave",
+      "directory": "2856",
+      "type": "raid",
+      "zone": "Eastern Plaguelands",
+      "art": "scarletenclave",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/scarlet-enclave/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "scarlet-monastery",
+      "mapId": 189,
+      "name": "Scarlet Monastery",
+      "directory": "MonasteryInstances",
+      "type": "dungeon",
+      "zone": "Tirisfal Glades",
+      "art": "scarletmonastery",
+      "sources": [
+        "Tirisfal Glades/The Scarlet Monastary - The Graveyard",
+        "Tirisfal Glades/The Scarlet Monastery - The Library",
+        "Tirisfal Glades/The Scarlet Monastery - The Armory",
+        "Tirisfal Glades/The Scarlet Monastery - The Cathedral"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/scarlet-monastery/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/scarlet-monastery/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/scarlet-monastery/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/scarlet-monastery/4.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "scholomance",
+      "mapId": 289,
+      "name": "Scholomance",
+      "directory": "SchoolofNecromancy",
+      "type": "dungeon",
+      "zone": "Western Plaguelands",
+      "art": "scholomanceold",
+      "sources": [
+        "Western Plaguelands/Scholomance"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/scholomance/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/scholomance/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/scholomance/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/scholomance/4.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "shadow-hold",
+      "mapId": 2806,
+      "name": "Shadow Hold",
+      "directory": "2806",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "shadowfang-keep",
+      "mapId": 33,
+      "name": "Shadowfang Keep",
+      "directory": "Shadowfang",
+      "type": "dungeon",
+      "zone": "Silverpine Forest",
+      "art": "shadowfangkeep",
+      "sources": [
+        "Silverpine Forest/Shadowfang Keep"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/shadowfang-keep/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/shadowfang-keep/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 3,
+          "label": "Floor 3",
+          "image": "maps/shadowfang-keep/3.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 4,
+          "artFloor": 4,
+          "label": "Floor 4",
+          "image": "maps/shadowfang-keep/4.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 5,
+          "artFloor": 5,
+          "label": "Floor 5",
+          "image": "maps/shadowfang-keep/5.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 6,
+          "artFloor": 6,
+          "label": "Floor 6",
+          "image": "maps/shadowfang-keep/6.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 7,
+          "artFloor": 7,
+          "label": "Floor 7",
+          "image": "maps/shadowfang-keep/7.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "starfall-barrow-den",
+      "mapId": 2817,
+      "name": "Starfall Barrow Den",
+      "directory": "2817",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "storm-cliffs",
+      "mapId": 2791,
+      "name": "Storm Cliffs",
+      "directory": "2791",
+      "type": "raid",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "stormwind-stockade",
+      "mapId": 34,
+      "name": "Stormwind Stockade",
+      "directory": "StormwindJail",
+      "type": "dungeon",
+      "zone": "Stormwind City",
+      "art": "thestockade",
+      "sources": [
+        "Stormwind City/Stormwind Stockade"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/stormwind-stockade/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "stratholme",
+      "mapId": 329,
+      "name": "Stratholme",
+      "directory": "Stratholme",
+      "type": "dungeon",
+      "zone": "Eastern Plaguelands",
+      "art": "stratholme",
+      "sources": [
+        "Eastern Plaguelands/Stratholme - Main Gate (Crusader's Square)",
+        "Eastern Plaguelands/Stratholme - Service Entrance (The Gauntlet)"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/stratholme/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/stratholme/2.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "sunken-temple",
+      "mapId": 109,
+      "name": "Sunken Temple",
+      "directory": "SunkenTemple",
+      "type": "dungeon",
+      "zone": "Swamp of Sorrows",
+      "art": "thetempleofatalhakkar",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/sunken-temple/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "the-crystal-vale",
+      "mapId": 2804,
+      "name": "The Crystal Vale",
+      "directory": "2804",
+      "type": "raid",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-drowned-city",
+      "mapId": 2970,
+      "name": "The Drowned City",
+      "directory": "2970",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-hall-of-thanes",
+      "mapId": 3065,
+      "name": "The Hall of Thanes",
+      "directory": "3065",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-scarab-dais",
+      "mapId": 2902,
+      "name": "The Scarab Dais",
+      "directory": "2902",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-searing-basin",
+      "mapId": 2720,
+      "name": "The Searing Basin",
+      "directory": "2720",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-shapers-terrace",
+      "mapId": 3001,
+      "name": "The Shaper's Terrace",
+      "directory": "3001",
+      "type": "dungeon",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "the-tainted-scar",
+      "mapId": 2789,
+      "name": "The Tainted Scar",
+      "directory": "2789",
+      "type": "raid",
+      "zone": null,
+      "art": null,
+      "sources": [],
+      "floors": []
+    },
+    {
+      "slug": "uldaman",
+      "mapId": 70,
+      "name": "Uldaman",
+      "directory": "Uldaman",
+      "type": "dungeon",
+      "zone": "Badlands",
+      "art": "uldaman",
+      "sources": [
+        "Badlands/Uldaman"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/uldaman/1.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 2,
+          "artFloor": 2,
+          "label": "Floor 2",
+          "image": "maps/uldaman/2.webp",
+          "width": 1002,
+          "height": 668
+        },
+        {
+          "floor": 3,
+          "artFloor": 18,
+          "label": "Floor 3",
+          "image": "maps/uldaman/3.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "wailing-caverns",
+      "mapId": 43,
+      "name": "Wailing Caverns",
+      "directory": "WailingCaverns",
+      "type": "dungeon",
+      "zone": "Northern Barrens",
+      "art": "wailingcaverns",
+      "sources": [
+        "Northern Barrens/Wailing Caverns"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/wailing-caverns/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "zulfarrak",
+      "mapId": 209,
+      "name": "Zul'Farrak",
+      "directory": "TanarisInstance",
+      "type": "dungeon",
+      "zone": "Tanaris",
+      "art": "zulfarrak",
+      "sources": [
+        "Tanaris/Zul'Farrak"
+      ],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/zulfarrak/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    },
+    {
+      "slug": "zulgurub",
+      "mapId": 309,
+      "name": "Zul'Gurub",
+      "directory": "Zul'gurub",
+      "type": "raid",
+      "zone": "Stranglethorn Vale",
+      "art": "zulgurub",
+      "sources": [],
+      "floors": [
+        {
+          "floor": 1,
+          "artFloor": 1,
+          "label": "Floor 1",
+          "image": "maps/zulgurub/1.webp",
+          "width": 1002,
+          "height": 668
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1946 @@
+[
+  {
+    "dir": "70blacktemplelegion",
+    "floors": 1
+  },
+  {
+    "dir": "abyssalmawshamanacquisition",
+    "floors": 2
+  },
+  {
+    "dir": "acherus",
+    "floors": 2
+  },
+  {
+    "dir": "ahnkahet",
+    "floors": 2
+  },
+  {
+    "dir": "ahnqirajthefallenkingdom",
+    "floors": 1
+  },
+  {
+    "dir": "alterac",
+    "floors": 1
+  },
+  {
+    "dir": "alteracvalley",
+    "floors": 1
+  },
+  {
+    "dir": "alteracvalleyclassic",
+    "floors": 1
+  },
+  {
+    "dir": "ammenvalestart",
+    "floors": 1
+  },
+  {
+    "dir": "ancientmogucrypt",
+    "floors": 2
+  },
+  {
+    "dir": "arathi",
+    "floors": 1
+  },
+  {
+    "dir": "arathibasin",
+    "floors": 1
+  },
+  {
+    "dir": "arathibasinupdate",
+    "floors": 1
+  },
+  {
+    "dir": "arathibasinwinter",
+    "floors": 1
+  },
+  {
+    "dir": "arauknashal",
+    "floors": 1
+  },
+  {
+    "dir": "arauknashalintroscenario",
+    "floors": 1
+  },
+  {
+    "dir": "arcwayscenario",
+    "floors": 1
+  },
+  {
+    "dir": "ardenwealdgarden",
+    "floors": 1
+  },
+  {
+    "dir": "argus",
+    "floors": 1
+  },
+  {
+    "dir": "argusdungeon",
+    "floors": 1
+  },
+  {
+    "dir": "argusraid",
+    "floors": 11
+  },
+  {
+    "dir": "artifactbrewmasterscenario",
+    "floors": 2
+  },
+  {
+    "dir": "artifactskywall",
+    "floors": 1
+  },
+  {
+    "dir": "artifactsubtletyrogueacquisition",
+    "floors": 2
+  },
+  {
+    "dir": "ashenvale",
+    "floors": 1
+  },
+  {
+    "dir": "ashran",
+    "floors": 1
+  },
+  {
+    "dir": "ashranalliancefactionhub",
+    "floors": 1
+  },
+  {
+    "dir": "ashranhordefactionhub",
+    "floors": 1
+  },
+  {
+    "dir": "assaultonbrokenshorescenario",
+    "floors": 1
+  },
+  {
+    "dir": "aszhara",
+    "floors": 1
+  },
+  {
+    "dir": "aszunadungeon",
+    "floors": 1
+  },
+  {
+    "dir": "aszunadungeonexterior",
+    "floors": 1
+  },
+  {
+    "dir": "auchenaicrypts",
+    "floors": 2
+  },
+  {
+    "dir": "azeritebg",
+    "floors": 1
+  },
+  {
+    "dir": "azeroth",
+    "floors": 1
+  },
+  {
+    "dir": "azjolnerub",
+    "floors": 3
+  },
+  {
+    "dir": "azsuna",
+    "floors": 1
+  },
+  {
+    "dir": "azsunaartifact",
+    "floors": 1
+  },
+  {
+    "dir": "azsunainvasionscenario",
+    "floors": 1
+  },
+  {
+    "dir": "azuremystisle",
+    "floors": 1
+  },
+  {
+    "dir": "azuremystislescenario",
+    "floors": 1
+  },
+  {
+    "dir": "azuremystscenario",
+    "floors": 3
+  },
+  {
+    "dir": "badlands",
+    "floors": 1
+  },
+  {
+    "dir": "banethilbarrowden",
+    "floors": 2
+  },
+  {
+    "dir": "baradinhold",
+    "floors": 1
+  },
+  {
+    "dir": "barrens",
+    "floors": 1
+  },
+  {
+    "dir": "battleforblackrockmountain",
+    "floors": 1
+  },
+  {
+    "dir": "blackrock",
+    "floors": 1
+  },
+  {
+    "dir": "blackrockcaverns",
+    "floors": 2
+  },
+  {
+    "dir": "blackrockpetbattle",
+    "floors": 1
+  },
+  {
+    "dir": "blackrockscenario",
+    "floors": 2
+  },
+  {
+    "dir": "blackrocktraindepotdungeon",
+    "floors": 4
+  },
+  {
+    "dir": "blackrookholddungeon",
+    "floors": 6
+  },
+  {
+    "dir": "blackrookholdscenario",
+    "floors": 1
+  },
+  {
+    "dir": "blacktemple",
+    "floors": 7
+  },
+  {
+    "dir": "blacktemplescenario",
+    "floors": 7
+  },
+  {
+    "dir": "blackwingdescent",
+    "floors": 2
+  },
+  {
+    "dir": "blackwingdescentscenario",
+    "floors": 2
+  },
+  {
+    "dir": "bladesedgemountains",
+    "floors": 1
+  },
+  {
+    "dir": "blastedlands",
+    "floors": 1
+  },
+  {
+    "dir": "bloodmystisle",
+    "floors": 1
+  },
+  {
+    "dir": "boreantundra",
+    "floors": 1
+  },
+  {
+    "dir": "brackenhidehollow",
+    "floors": 1
+  },
+  {
+    "dir": "brawlgararena",
+    "floors": 1
+  },
+  {
+    "dir": "brokenisles",
+    "floors": 1
+  },
+  {
+    "dir": "brokenshore",
+    "floors": 1
+  },
+  {
+    "dir": "brokenshoreintro",
+    "floors": 1
+  },
+  {
+    "dir": "brokenshorepaladin",
+    "floors": 1
+  },
+  {
+    "dir": "brokerdungeonstormheim",
+    "floors": 1
+  },
+  {
+    "dir": "brokerentrance",
+    "floors": 1
+  },
+  {
+    "dir": "burningsteppes",
+    "floors": 1
+  },
+  {
+    "dir": "campnarachestart",
+    "floors": 1
+  },
+  {
+    "dir": "caveofthebloodtotemscenario",
+    "floors": 1
+  },
+  {
+    "dir": "celestialchallenge",
+    "floors": 1
+  },
+  {
+    "dir": "chamberofheart",
+    "floors": 1
+  },
+  {
+    "dir": "cityofgold",
+    "floors": 2
+  },
+  {
+    "dir": "coilfangreservoir",
+    "floors": 1
+  },
+  {
+    "dir": "coldridgevalley",
+    "floors": 1
+  },
+  {
+    "dir": "coldridgevalleyscenario",
+    "floors": 1
+  },
+  {
+    "dir": "cookingimpossible",
+    "floors": 1
+  },
+  {
+    "dir": "cosmic",
+    "floors": 1
+  },
+  {
+    "dir": "cothillsbradfoothills",
+    "floors": 1
+  },
+  {
+    "dir": "cotmounthyjal",
+    "floors": 1
+  },
+  {
+    "dir": "cotstratholme",
+    "floors": 1
+  },
+  {
+    "dir": "cottheblackmorass",
+    "floors": 1
+  },
+  {
+    "dir": "crapopolis",
+    "floors": 1
+  },
+  {
+    "dir": "crystalsongforest",
+    "floors": 1
+  },
+  {
+    "dir": "dalaran",
+    "floors": 2
+  },
+  {
+    "dir": "dalaran7",
+    "floors": 4
+  },
+  {
+    "dir": "dalaran70",
+    "floors": 4
+  },
+  {
+    "dir": "dalarancity",
+    "floors": 2
+  },
+  {
+    "dir": "darkflamecleft",
+    "floors": 1
+  },
+  {
+    "dir": "darkheartthicket",
+    "floors": 1
+  },
+  {
+    "dir": "darkmoonfaireisland",
+    "floors": 1
+  },
+  {
+    "dir": "darkshore",
+    "floors": 1
+  },
+  {
+    "dir": "darkshoreoutdoor",
+    "floors": 1
+  },
+  {
+    "dir": "darkspearisland",
+    "floors": 1
+  },
+  {
+    "dir": "darnassis",
+    "floors": 1
+  },
+  {
+    "dir": "darnassus",
+    "floors": 1
+  },
+  {
+    "dir": "darrowmerelake",
+    "floors": 1
+  },
+  {
+    "dir": "dawnbreaker",
+    "floors": 1
+  },
+  {
+    "dir": "deadmineswestfall",
+    "floors": 1
+  },
+  {
+    "dir": "deadwindpass",
+    "floors": 1
+  },
+  {
+    "dir": "deathknellstart",
+    "floors": 1
+  },
+  {
+    "dir": "deepholm",
+    "floors": 1
+  },
+  {
+    "dir": "deepholmshamanacquisition",
+    "floors": 1
+  },
+  {
+    "dir": "deepruntram",
+    "floors": 2
+  },
+  {
+    "dir": "defenseofkarabor",
+    "floors": 1
+  },
+  {
+    "dir": "demonhunterorderhallterrain",
+    "floors": 2
+  },
+  {
+    "dir": "desolace",
+    "floors": 1
+  },
+  {
+    "dir": "draenor",
+    "floors": 1
+  },
+  {
+    "dir": "draenorauchindoun",
+    "floors": 1
+  },
+  {
+    "dir": "dragonblight",
+    "floors": 1
+  },
+  {
+    "dir": "dragonblightchromiescenario",
+    "floors": 5
+  },
+  {
+    "dir": "dragonsoul",
+    "floors": 6
+  },
+  {
+    "dir": "draktharonkeep",
+    "floors": 2
+  },
+  {
+    "dir": "dreadscarrift",
+    "floors": 1
+  },
+  {
+    "dir": "dreadwastes",
+    "floors": 1
+  },
+  {
+    "dir": "dunmorogh",
+    "floors": 1
+  },
+  {
+    "dir": "dunmoroghscenario",
+    "floors": 1
+  },
+  {
+    "dir": "durotar",
+    "floors": 1
+  },
+  {
+    "dir": "duskwood",
+    "floors": 1
+  },
+  {
+    "dir": "dustwallow",
+    "floors": 1
+  },
+  {
+    "dir": "dustwallowmarshscenario",
+    "floors": 1
+  },
+  {
+    "dir": "dustwallowmarshscenarioalliance",
+    "floors": 1
+  },
+  {
+    "dir": "earthenstarter",
+    "floors": 1
+  },
+  {
+    "dir": "easternplaguelands",
+    "floors": 1
+  },
+  {
+    "dir": "easttemple",
+    "floors": 2
+  },
+  {
+    "dir": "echoislesstart",
+    "floors": 1
+  },
+  {
+    "dir": "elwynn",
+    "floors": 1
+  },
+  {
+    "dir": "emberdeepscenario",
+    "floors": 1
+  },
+  {
+    "dir": "emeralddreamway",
+    "floors": 1
+  },
+  {
+    "dir": "endtime",
+    "floors": 5
+  },
+  {
+    "dir": "eversongwoods",
+    "floors": 1
+  },
+  {
+    "dir": "felwingledgemardumarea",
+    "floors": 1
+  },
+  {
+    "dir": "felwood",
+    "floors": 1
+  },
+  {
+    "dir": "feralas",
+    "floors": 1
+  },
+  {
+    "dir": "firelands",
+    "floors": 2
+  },
+  {
+    "dir": "firelandsshaman",
+    "floors": 1
+  },
+  {
+    "dir": "foundryraid",
+    "floors": 5
+  },
+  {
+    "dir": "frostfireridge",
+    "floors": 1
+  },
+  {
+    "dir": "frostmanehold",
+    "floors": 1
+  },
+  {
+    "dir": "frostmanehovel",
+    "floors": 1
+  },
+  {
+    "dir": "ghostlands",
+    "floors": 1
+  },
+  {
+    "dir": "gilneas",
+    "floors": 1
+  },
+  {
+    "dir": "gilneascity",
+    "floors": 1
+  },
+  {
+    "dir": "gilneasdreamway",
+    "floors": 1
+  },
+  {
+    "dir": "gilneasisland",
+    "floors": 1
+  },
+  {
+    "dir": "gloamingreef",
+    "floors": 1
+  },
+  {
+    "dir": "gnomereganpetbattle",
+    "floors": 3
+  },
+  {
+    "dir": "goldrush",
+    "floors": 1
+  },
+  {
+    "dir": "gorgrond",
+    "floors": 1
+  },
+  {
+    "dir": "gorgrondscenario",
+    "floors": 1
+  },
+  {
+    "dir": "greatseaalliance",
+    "floors": 1
+  },
+  {
+    "dir": "greatseahorde",
+    "floors": 1
+  },
+  {
+    "dir": "greymanemanor",
+    "floors": 2
+  },
+  {
+    "dir": "grimbatol",
+    "floors": 1
+  },
+  {
+    "dir": "grizzlyhills",
+    "floors": 1
+  },
+  {
+    "dir": "gruulslair",
+    "floors": 1
+  },
+  {
+    "dir": "gundrak",
+    "floors": 1
+  },
+  {
+    "dir": "hallofcommunion",
+    "floors": 1
+  },
+  {
+    "dir": "hallsoflightning",
+    "floors": 2
+  },
+  {
+    "dir": "hallsoforigination",
+    "floors": 3
+  },
+  {
+    "dir": "hallsoforiginationscenario",
+    "floors": 3
+  },
+  {
+    "dir": "hallsofreflection",
+    "floors": 1
+  },
+  {
+    "dir": "hallsofvalor",
+    "floors": 2
+  },
+  {
+    "dir": "hallsofvalorwarriorclassmount",
+    "floors": 1
+  },
+  {
+    "dir": "heartoffear",
+    "floors": 2
+  },
+  {
+    "dir": "helheim",
+    "floors": 1
+  },
+  {
+    "dir": "helheimdungeondock",
+    "floors": 2
+  },
+  {
+    "dir": "helheimraid",
+    "floors": 2
+  },
+  {
+    "dir": "hellfire",
+    "floors": 1
+  },
+  {
+    "dir": "hellfireraid",
+    "floors": 9
+  },
+  {
+    "dir": "hellfireramparts",
+    "floors": 1
+  },
+  {
+    "dir": "helmouthshallows",
+    "floors": 1
+  },
+  {
+    "dir": "highmaulraid",
+    "floors": 5
+  },
+  {
+    "dir": "highmountain",
+    "floors": 1
+  },
+  {
+    "dir": "highmountaininvasionscenario",
+    "floors": 2
+  },
+  {
+    "dir": "hillsbradfoothills",
+    "floors": 1
+  },
+  {
+    "dir": "hillsbradfoothillsbg",
+    "floors": 1
+  },
+  {
+    "dir": "hilsbrad",
+    "floors": 1
+  },
+  {
+    "dir": "hinterlands",
+    "floors": 1
+  },
+  {
+    "dir": "hoascenarioemeralddreamlowerleft",
+    "floors": 1
+  },
+  {
+    "dir": "hoatwilighthighlandsdragon",
+    "floors": 1
+  },
+  {
+    "dir": "houroftwilight",
+    "floors": 1
+  },
+  {
+    "dir": "howlingfjord",
+    "floors": 1
+  },
+  {
+    "dir": "hrothgarslanding",
+    "floors": 1
+  },
+  {
+    "dir": "htvaleofeternalblossoms",
+    "floors": 1
+  },
+  {
+    "dir": "hulnflashback",
+    "floors": 1
+  },
+  {
+    "dir": "icecrowncitadel",
+    "floors": 8
+  },
+  {
+    "dir": "icecrowncitadeldeathknight",
+    "floors": 4
+  },
+  {
+    "dir": "icecrowndeathknight",
+    "floors": 1
+  },
+  {
+    "dir": "icecrownglacier",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointaurinor",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointbonich",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointcengar",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointnaigtal",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointsangua",
+    "floors": 1
+  },
+  {
+    "dir": "invasionpointval",
+    "floors": 1
+  },
+  {
+    "dir": "irondocks",
+    "floors": 1
+  },
+  {
+    "dir": "ironforge",
+    "floors": 1
+  },
+  {
+    "dir": "islandcrestfall",
+    "floors": 1
+  },
+  {
+    "dir": "islanddreadchain",
+    "floors": 1
+  },
+  {
+    "dir": "islandhavenswood",
+    "floors": 1
+  },
+  {
+    "dir": "islandjorundall",
+    "floors": 1
+  },
+  {
+    "dir": "islandmoltencay",
+    "floors": 1
+  },
+  {
+    "dir": "islandrottingmire",
+    "floors": 1
+  },
+  {
+    "dir": "islands",
+    "floors": 1
+  },
+  {
+    "dir": "islandskitteringhollow",
+    "floors": 1
+  },
+  {
+    "dir": "islandsnowblossomvilliage",
+    "floors": 1
+  },
+  {
+    "dir": "islandstropical",
+    "floors": 1
+  },
+  {
+    "dir": "islandverdantwilds",
+    "floors": 1
+  },
+  {
+    "dir": "islandwhisperingreef",
+    "floors": 1
+  },
+  {
+    "dir": "isleofconquest",
+    "floors": 1
+  },
+  {
+    "dir": "isleofgiants",
+    "floors": 1
+  },
+  {
+    "dir": "isleofthethunderking",
+    "floors": 1
+  },
+  {
+    "dir": "isleofthethunderkingscenario",
+    "floors": 1
+  },
+  {
+    "dir": "karazhan",
+    "floors": 17
+  },
+  {
+    "dir": "karazhanscenario",
+    "floors": 4
+  },
+  {
+    "dir": "kezan",
+    "floors": 1
+  },
+  {
+    "dir": "kezandungeon",
+    "floors": 1
+  },
+  {
+    "dir": "kingsrest",
+    "floors": 1
+  },
+  {
+    "dir": "krasarang",
+    "floors": 1
+  },
+  {
+    "dir": "krasarangalliance",
+    "floors": 1
+  },
+  {
+    "dir": "krasaranghorde",
+    "floors": 1
+  },
+  {
+    "dir": "krasarangpatience",
+    "floors": 1
+  },
+  {
+    "dir": "kultiraspiratetowndungeon",
+    "floors": 1
+  },
+  {
+    "dir": "kunlaipassscenario",
+    "floors": 1
+  },
+  {
+    "dir": "kunlaisummit",
+    "floors": 1
+  },
+  {
+    "dir": "kunlaisummitscenario",
+    "floors": 1
+  },
+  {
+    "dir": "lakewintergrasp",
+    "floors": 1
+  },
+  {
+    "dir": "legionkarazhandungeon",
+    "floors": 14
+  },
+  {
+    "dir": "legionvioletholddungeon",
+    "floors": 1
+  },
+  {
+    "dir": "lightforgeddraeneiswamp",
+    "floors": 1
+  },
+  {
+    "dir": "lightforgedvindicaar",
+    "floors": 2
+  },
+  {
+    "dir": "lochmodan",
+    "floors": 1
+  },
+  {
+    "dir": "lostcityoftolvir",
+    "floors": 1
+  },
+  {
+    "dir": "lostglacierdkmountscenario",
+    "floors": 1
+  },
+  {
+    "dir": "maelstromshaman",
+    "floors": 1
+  },
+  {
+    "dir": "maelstromshamanhubintro",
+    "floors": 1
+  },
+  {
+    "dir": "magecampaigntheoculus",
+    "floors": 4
+  },
+  {
+    "dir": "mageclassshrine",
+    "floors": 2
+  },
+  {
+    "dir": "magistersterrace",
+    "floors": 2
+  },
+  {
+    "dir": "magtheridonslair",
+    "floors": 1
+  },
+  {
+    "dir": "malornesnightmare",
+    "floors": 1
+  },
+  {
+    "dir": "manatombs",
+    "floors": 1
+  },
+  {
+    "dir": "mardumtheshatteredabyss",
+    "floors": 1
+  },
+  {
+    "dir": "mechagondungeon",
+    "floors": 4
+  },
+  {
+    "dir": "minorthreatuldum",
+    "floors": 1
+  },
+  {
+    "dir": "minorthreatvale",
+    "floors": 1
+  },
+  {
+    "dir": "mistsoftirnescithe",
+    "floors": 1
+  },
+  {
+    "dir": "mogushanpalace",
+    "floors": 3
+  },
+  {
+    "dir": "mogushanpalacescenario",
+    "floors": 3
+  },
+  {
+    "dir": "mogushanvaults",
+    "floors": 3
+  },
+  {
+    "dir": "moltenfront",
+    "floors": 1
+  },
+  {
+    "dir": "monkorderhallthewanderingisle",
+    "floors": 1
+  },
+  {
+    "dir": "moonglade",
+    "floors": 1
+  },
+  {
+    "dir": "mrrglblight",
+    "floors": 1
+  },
+  {
+    "dir": "mulgore",
+    "floors": 1
+  },
+  {
+    "dir": "nagrand",
+    "floors": 1
+  },
+  {
+    "dir": "nagranddraenor",
+    "floors": 1
+  },
+  {
+    "dir": "nathriascenario",
+    "floors": 1
+  },
+  {
+    "dir": "nazjatarraidentrance",
+    "floors": 1
+  },
+  {
+    "dir": "neltharionslair",
+    "floors": 1
+  },
+  {
+    "dir": "netherlighttemple",
+    "floors": 1
+  },
+  {
+    "dir": "netherstorm",
+    "floors": 1
+  },
+  {
+    "dir": "netherstormarena",
+    "floors": 1
+  },
+  {
+    "dir": "newtinkertownstart",
+    "floors": 1
+  },
+  {
+    "dir": "nexus8",
+    "floors": 4
+  },
+  {
+    "dir": "nexus80",
+    "floors": 4
+  },
+  {
+    "dir": "nightmareraid",
+    "floors": 13
+  },
+  {
+    "dir": "niskara",
+    "floors": 1
+  },
+  {
+    "dir": "northrend",
+    "floors": 1
+  },
+  {
+    "dir": "northshire",
+    "floors": 1
+  },
+  {
+    "dir": "npe",
+    "floors": 1
+  },
+  {
+    "dir": "nzothraid",
+    "floors": 10
+  },
+  {
+    "dir": "ogremines",
+    "floors": 1
+  },
+  {
+    "dir": "ogrimmar",
+    "floors": 1
+  },
+  {
+    "dir": "oldironforge",
+    "floors": 1
+  },
+  {
+    "dir": "orgrimmar",
+    "floors": 1
+  },
+  {
+    "dir": "orgrimmarraid",
+    "floors": 14
+  },
+  {
+    "dir": "orgrimmarraidscenario",
+    "floors": 1
+  },
+  {
+    "dir": "pandarenrevolution",
+    "floors": 1
+  },
+  {
+    "dir": "pandaria",
+    "floors": 1
+  },
+  {
+    "dir": "pathofprogenitor",
+    "floors": 1
+  },
+  {
+    "dir": "petbattlestratholme",
+    "floors": 1
+  },
+  {
+    "dir": "pitofsaron",
+    "floors": 1
+  },
+  {
+    "dir": "pitofsarondk",
+    "floors": 1
+  },
+  {
+    "dir": "plaguefall",
+    "floors": 1
+  },
+  {
+    "dir": "priestclassmountscenario",
+    "floors": 1
+  },
+  {
+    "dir": "primalisttomorow",
+    "floors": 1
+  },
+  {
+    "dir": "prisondungeon",
+    "floors": 6
+  },
+  {
+    "dir": "prisonofink",
+    "floors": 1
+  },
+  {
+    "dir": "provinggrounds",
+    "floors": 1
+  },
+  {
+    "dir": "redridge",
+    "floors": 1
+  },
+  {
+    "dir": "ruinsofgilneas",
+    "floors": 1
+  },
+  {
+    "dir": "ruinsofgilneascity",
+    "floors": 1
+  },
+  {
+    "dir": "ruinsoflordaeronscenario",
+    "floors": 1
+  },
+  {
+    "dir": "scarletcathedral",
+    "floors": 2
+  },
+  {
+    "dir": "scarlethalls",
+    "floors": 2
+  },
+  {
+    "dir": "scarlethallsdarkranger",
+    "floors": 1
+  },
+  {
+    "dir": "scarletmonestarydk",
+    "floors": 2
+  },
+  {
+    "dir": "scholomance",
+    "floors": 4
+  },
+  {
+    "dir": "searinggorge",
+    "floors": 1
+  },
+  {
+    "dir": "sethekkhalls",
+    "floors": 2
+  },
+  {
+    "dir": "shadowglenstart",
+    "floors": 1
+  },
+  {
+    "dir": "shadowlabyrinth",
+    "floors": 1
+  },
+  {
+    "dir": "shadowmoondungeon",
+    "floors": 3
+  },
+  {
+    "dir": "shadowmoonvalley",
+    "floors": 1
+  },
+  {
+    "dir": "shadowmoonvalleydr",
+    "floors": 1
+  },
+  {
+    "dir": "shadowpanhideout",
+    "floors": 3
+  },
+  {
+    "dir": "shattrathcity",
+    "floors": 1
+  },
+  {
+    "dir": "shendralas",
+    "floors": 1
+  },
+  {
+    "dir": "sholazarbasin",
+    "floors": 1
+  },
+  {
+    "dir": "shrineofsevenstars",
+    "floors": 2
+  },
+  {
+    "dir": "shrineofthestorm",
+    "floors": 1
+  },
+  {
+    "dir": "siegeofboralus",
+    "floors": 1
+  },
+  {
+    "dir": "siegeofniuzaotemple",
+    "floors": 2
+  },
+  {
+    "dir": "silithus",
+    "floors": 1
+  },
+  {
+    "dir": "silithusbrawl",
+    "floors": 1
+  },
+  {
+    "dir": "silvermooncity",
+    "floors": 1
+  },
+  {
+    "dir": "silverpine",
+    "floors": 1
+  },
+  {
+    "dir": "sinfallscenario",
+    "floors": 1
+  },
+  {
+    "dir": "skywall",
+    "floors": 1
+  },
+  {
+    "dir": "smallbattlegroundc",
+    "floors": 1
+  },
+  {
+    "dir": "southernbarrens",
+    "floors": 1
+  },
+  {
+    "dir": "spiresofarak",
+    "floors": 1
+  },
+  {
+    "dir": "spiresofarakdungeon",
+    "floors": 2
+  },
+  {
+    "dir": "spitescalecavern",
+    "floors": 1
+  },
+  {
+    "dir": "stockadescenario",
+    "floors": 1
+  },
+  {
+    "dir": "stonetalonmountains",
+    "floors": 1
+  },
+  {
+    "dir": "stormheim",
+    "floors": 1
+  },
+  {
+    "dir": "stormheimartifactprotwarrior",
+    "floors": 1
+  },
+  {
+    "dir": "stormheiminvasionscenario",
+    "floors": 2
+  },
+  {
+    "dir": "stormstoutbrewery",
+    "floors": 4
+  },
+  {
+    "dir": "stormstoutbreweryscenario",
+    "floors": 2
+  },
+  {
+    "dir": "stormwind",
+    "floors": 1
+  },
+  {
+    "dir": "stormwindcity",
+    "floors": 1
+  },
+  {
+    "dir": "strandoftheancients",
+    "floors": 1
+  },
+  {
+    "dir": "stranglethorn",
+    "floors": 1
+  },
+  {
+    "dir": "stranglethornjungle",
+    "floors": 1
+  },
+  {
+    "dir": "stranglethornvale",
+    "floors": 1
+  },
+  {
+    "dir": "stratholmepaladinclassmount",
+    "floors": 1
+  },
+  {
+    "dir": "stvdiamondminebg",
+    "floors": 1
+  },
+  {
+    "dir": "suamarcatacombsdungeon",
+    "floors": 1
+  },
+  {
+    "dir": "sunstriderislestart",
+    "floors": 1
+  },
+  {
+    "dir": "sunwell",
+    "floors": 1
+  },
+  {
+    "dir": "sunwellplateau",
+    "floors": 1
+  },
+  {
+    "dir": "suramar",
+    "floors": 1
+  },
+  {
+    "dir": "suramaracquisition",
+    "floors": 1
+  },
+  {
+    "dir": "suramarnoblesdistrict",
+    "floors": 2
+  },
+  {
+    "dir": "suramarraid",
+    "floors": 9
+  },
+  {
+    "dir": "swampofsorrows",
+    "floors": 1
+  },
+  {
+    "dir": "talador",
+    "floors": 1
+  },
+  {
+    "dir": "taladorscenario",
+    "floors": 1
+  },
+  {
+    "dir": "tanaanjungle",
+    "floors": 1
+  },
+  {
+    "dir": "tanaanjungleintro",
+    "floors": 1
+  },
+  {
+    "dir": "tanaris",
+    "floors": 1
+  },
+  {
+    "dir": "teldrassil",
+    "floors": 1
+  },
+  {
+    "dir": "tempestkeep",
+    "floors": 1
+  },
+  {
+    "dir": "tempkrasaranghordebase",
+    "floors": 1
+  },
+  {
+    "dir": "templeofkotmogu",
+    "floors": 1
+  },
+  {
+    "dir": "templeofsethralissa",
+    "floors": 1
+  },
+  {
+    "dir": "terokkarforest",
+    "floors": 1
+  },
+  {
+    "dir": "terraceofendlessspring",
+    "floors": 1
+  },
+  {
+    "dir": "terraceofendlessspringscenario",
+    "floors": 1
+  },
+  {
+    "dir": "thearcatraz",
+    "floors": 3
+  },
+  {
+    "dir": "theargentcoliseum",
+    "floors": 2
+  },
+  {
+    "dir": "theaterofpain",
+    "floors": 1
+  },
+  {
+    "dir": "thebastionoftwilight",
+    "floors": 3
+  },
+  {
+    "dir": "thebeyond",
+    "floors": 1
+  },
+  {
+    "dir": "thebloodfurnace",
+    "floors": 1
+  },
+  {
+    "dir": "thebotanica",
+    "floors": 1
+  },
+  {
+    "dir": "thecapeofstranglethorn",
+    "floors": 1
+  },
+  {
+    "dir": "thedeadminespetbattle",
+    "floors": 2
+  },
+  {
+    "dir": "thedreamgrove",
+    "floors": 1
+  },
+  {
+    "dir": "theexodar",
+    "floors": 1
+  },
+  {
+    "dir": "theeyeofeternity",
+    "floors": 1
+  },
+  {
+    "dir": "theeyeofeternitymageclassmount",
+    "floors": 1
+  },
+  {
+    "dir": "theforgeofsouls",
+    "floors": 1
+  },
+  {
+    "dir": "thegreatwall",
+    "floors": 2
+  },
+  {
+    "dir": "thehiddenpass",
+    "floors": 1
+  },
+  {
+    "dir": "thejadeforest",
+    "floors": 1
+  },
+  {
+    "dir": "thejadeforestscenario",
+    "floors": 1
+  },
+  {
+    "dir": "thelostisles",
+    "floors": 1
+  },
+  {
+    "dir": "themaelstrom",
+    "floors": 1
+  },
+  {
+    "dir": "themaelstromcontinent",
+    "floors": 1
+  },
+  {
+    "dir": "themechanar",
+    "floors": 2
+  },
+  {
+    "dir": "thenexuslegendary",
+    "floors": 1
+  },
+  {
+    "dir": "theobsidiansanctum",
+    "floors": 1
+  },
+  {
+    "dir": "therubysanctum",
+    "floors": 1
+  },
+  {
+    "dir": "therubysanctumdkmountscenario",
+    "floors": 1
+  },
+  {
+    "dir": "theshatteredhalls",
+    "floors": 1
+  },
+  {
+    "dir": "theslavepens",
+    "floors": 1
+  },
+  {
+    "dir": "theslitheringscar",
+    "floors": 1
+  },
+  {
+    "dir": "thesteamvault",
+    "floors": 2
+  },
+  {
+    "dir": "thestonecore",
+    "floors": 1
+  },
+  {
+    "dir": "thestormpeaks",
+    "floors": 1
+  },
+  {
+    "dir": "thesunwellunlockscenario",
+    "floors": 1
+  },
+  {
+    "dir": "theunderbog",
+    "floors": 1
+  },
+  {
+    "dir": "thevioletholdacquisition",
+    "floors": 1
+  },
+  {
+    "dir": "thevortexpinnacle",
+    "floors": 1
+  },
+  {
+    "dir": "thewanderingisle",
+    "floors": 1
+  },
+  {
+    "dir": "thousandneedles",
+    "floors": 1
+  },
+  {
+    "dir": "threatuldum",
+    "floors": 1
+  },
+  {
+    "dir": "threatvaleofeternalblossoms",
+    "floors": 1
+  },
+  {
+    "dir": "throneofthefourwinds",
+    "floors": 1
+  },
+  {
+    "dir": "throneoftides",
+    "floors": 2
+  },
+  {
+    "dir": "thros",
+    "floors": 1
+  },
+  {
+    "dir": "thunderbluff",
+    "floors": 1
+  },
+  {
+    "dir": "thunderkinglootroom",
+    "floors": 1
+  },
+  {
+    "dir": "thunderkingraid",
+    "floors": 8
+  },
+  {
+    "dir": "thundertotem",
+    "floors": 1
+  },
+  {
+    "dir": "timelessisle",
+    "floors": 1
+  },
+  {
+    "dir": "tirisfal",
+    "floors": 1
+  },
+  {
+    "dir": "tirisfalgladesinsidescenario",
+    "floors": 1
+  },
+  {
+    "dir": "tkarcatrazscenario",
+    "floors": 2
+  },
+  {
+    "dir": "tolbarad",
+    "floors": 1
+  },
+  {
+    "dir": "tolbaraddailyarea",
+    "floors": 1
+  },
+  {
+    "dir": "tolbaradwarlockscenario",
+    "floors": 1
+  },
+  {
+    "dir": "tombofsargerasdungeon",
+    "floors": 5
+  },
+  {
+    "dir": "tombraid",
+    "floors": 7
+  },
+  {
+    "dir": "townlongwastes",
+    "floors": 1
+  },
+  {
+    "dir": "traitorsrest",
+    "floors": 1
+  },
+  {
+    "dir": "tropicalisle",
+    "floors": 1
+  },
+  {
+    "dir": "trueshotlodge",
+    "floors": 1
+  },
+  {
+    "dir": "twilighthighlands",
+    "floors": 1
+  },
+  {
+    "dir": "twinpeaks",
+    "floors": 1
+  },
+  {
+    "dir": "tyrivess",
+    "floors": 1
+  },
+  {
+    "dir": "tyrsfallscenario",
+    "floors": 1
+  },
+  {
+    "dir": "uldir",
+    "floors": 8
+  },
+  {
+    "dir": "ulduar",
+    "floors": 5
+  },
+  {
+    "dir": "ulduar7",
+    "floors": 1
+  },
+  {
+    "dir": "ulduar77",
+    "floors": 1
+  },
+  {
+    "dir": "ulduarmagni",
+    "floors": 3
+  },
+  {
+    "dir": "uldum",
+    "floors": 1
+  },
+  {
+    "dir": "unchartedislandscenario",
+    "floors": 1
+  },
+  {
+    "dir": "undercity",
+    "floors": 1
+  },
+  {
+    "dir": "underrotexterior",
+    "floors": 1
+  },
+  {
+    "dir": "ungorocrater",
+    "floors": 1
+  },
+  {
+    "dir": "upperblackrockspire",
+    "floors": 3
+  },
+  {
+    "dir": "ursocslairscenario",
+    "floors": 1
+  },
+  {
+    "dir": "utgardekeep",
+    "floors": 3
+  },
+  {
+    "dir": "utgardepinnacle",
+    "floors": 2
+  },
+  {
+    "dir": "valeofeternalblossoms",
+    "floors": 1
+  },
+  {
+    "dir": "valeofeternalblossomsscenario",
+    "floors": 1
+  },
+  {
+    "dir": "valhallaswarriororderhome",
+    "floors": 1
+  },
+  {
+    "dir": "valleyofpower",
+    "floors": 1
+  },
+  {
+    "dir": "valleyofpowerscenario",
+    "floors": 1
+  },
+  {
+    "dir": "valleyofthefourwinds",
+    "floors": 1
+  },
+  {
+    "dir": "valleyoftrialsstart",
+    "floors": 1
+  },
+  {
+    "dir": "valsharah",
+    "floors": 1
+  },
+  {
+    "dir": "valsharahinvasionscenario",
+    "floors": 1
+  },
+  {
+    "dir": "valsharaslscenario",
+    "floors": 1
+  },
+  {
+    "dir": "vashjir",
+    "floors": 1
+  },
+  {
+    "dir": "vashjirdepths",
+    "floors": 1
+  },
+  {
+    "dir": "vashjirkelpforest",
+    "floors": 1
+  },
+  {
+    "dir": "vashjirruins",
+    "floors": 1
+  },
+  {
+    "dir": "vaultofarchavon",
+    "floors": 1
+  },
+  {
+    "dir": "vaultofmemory",
+    "floors": 1
+  },
+  {
+    "dir": "vaultofthewardens",
+    "floors": 3
+  },
+  {
+    "dir": "vaultofthewardensdh",
+    "floors": 3
+  },
+  {
+    "dir": "visionsofnzoth",
+    "floors": 1
+  },
+  {
+    "dir": "voidelfhub",
+    "floors": 1
+  },
+  {
+    "dir": "voidelfscenario",
+    "floors": 1
+  },
+  {
+    "dir": "volcanothslair",
+    "floors": 1
+  },
+  {
+    "dir": "voljinscenario",
+    "floors": 1
+  },
+  {
+    "dir": "wailingcavernspetbattle",
+    "floors": 1
+  },
+  {
+    "dir": "warfrontsarathihorde",
+    "floors": 1
+  },
+  {
+    "dir": "warfrontsdarkshorealliance",
+    "floors": 1
+  },
+  {
+    "dir": "warfrontsdarkshorehorde",
+    "floors": 1
+  },
+  {
+    "dir": "warlockclassshrine",
+    "floors": 1
+  },
+  {
+    "dir": "warsonggulch",
+    "floors": 1
+  },
+  {
+    "dir": "warsonggulchupdate",
+    "floors": 1
+  },
+  {
+    "dir": "waycrest",
+    "floors": 5
+  },
+  {
+    "dir": "wellofeternity",
+    "floors": 1
+  },
+  {
+    "dir": "westernplaguelands",
+    "floors": 1
+  },
+  {
+    "dir": "westfall",
+    "floors": 1
+  },
+  {
+    "dir": "wetlands",
+    "floors": 1
+  },
+  {
+    "dir": "winterspring",
+    "floors": 1
+  },
+  {
+    "dir": "zandalaritreasury",
+    "floors": 1
+  },
+  {
+    "dir": "zangarmarsh",
+    "floors": 1
+  },
+  {
+    "dir": "zephrasisle",
+    "floors": 1
+  },
+  {
+    "dir": "zulaman",
+    "floors": 1
+  },
+  {
+    "dir": "zuldazarraida",
+    "floors": 1
+  },
+  {
+    "dir": "zuldrak",
+    "floors": 1
+  }
+]

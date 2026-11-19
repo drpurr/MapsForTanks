@@ -1,0 +1,78 @@
+{
+ "_title": "Main Gate",
+ "b2": {
+  "kind": "boss",
+  "order": 1
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 4
+ },
+ "b3": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 3,
+   "pos": [
+    0.49,
+    0.16
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 5,
+   "pos": [
+    0.3,
+    0.41
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 6,
+   "pos": [
+    0.135,
+    0.435
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 7,
+   "pos": [
+    0.04,
+    0.47
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 8,
+   "pos": [
+    0.28,
+    0.745
+   ]
+  },
+  {
+   "kind": "boss",
+   "order": 9,
+   "pos": [
+    0.2,
+    0.82
+   ]
+  }
+ ],
+ "_entrance": [
+  0.71,
+  0.91
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "b0": {
+  "kind": "boss",
+  "order": 1
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 2
+ },
+ "_entrance": [
+  0.343,
+  0.13
+ ]
+}

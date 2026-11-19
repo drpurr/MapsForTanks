@@ -1,0 +1,11 @@
+{
+ "_title": "Upper Observatory",
+ "y0": {
+  "kind": "transition",
+  "text": "From Lower Observatory"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To Lord Godfrey's Chambers"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "_title": "Detention Block",
+ "y0": {
+  "kind": "transition",
+  "text": "To Shadowforge City"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 3,
+  "text": "4/3"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b3": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 1
+ },
+ "_entrance": [
+  0.325,
+  0.74
+ ]
+}

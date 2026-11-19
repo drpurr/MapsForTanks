@@ -1,0 +1,52 @@
+{
+ "_title": "West: Capital Gardens",
+ "y0": {
+  "kind": "transition",
+  "text": "To + from Court"
+ },
+ "y1": {
+  "kind": "label",
+  "text": "To Prison / To + from Court"
+ },
+ "b0": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3,
+  "pos": [
+   0.27,
+   0.53
+  ]
+ },
+ "b3": {
+  "kind": "ignore"
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b5": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 2,
+  "pos": [
+   0.165,
+   0.82
+  ]
+ },
+ "b6": {
+  "kind": "ignore"
+ },
+ "_entrance": [
+  0.962,
+  0.49
+ ]
+}

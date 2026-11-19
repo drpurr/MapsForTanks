@@ -1,0 +1,43 @@
+{
+ "_title": "Service Entrance",
+ "b0": {
+  "kind": "boss",
+  "order": 4
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 6
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 1
+ },
+ "b5": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b6": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b7": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_entrance": [
+  0.63,
+  0.92
+ ]
+}

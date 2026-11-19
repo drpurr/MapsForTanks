@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "route.schema.json",
+  "title": "Tank route for one instance",
+  "type": "object",
+  "required": ["instance", "mapId", "source", "reviewed", "sections"],
+  "additionalProperties": false,
+  "$defs": {
+    "pt": { "type": "array", "items": { "type": "number", "minimum": -0.05, "maximum": 1.05 }, "minItems": 2, "maxItems": 2 },
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" }
+  },
+  "properties": {
+    "instance": { "type": "string" },
+    "mapId": { "type": "integer" },
+    "source": { "enum": ["mapsfortanks", "manual"] },
+    "reviewed": { "type": "boolean" },
+    "notes": { "type": "string" },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "floor", "path", "boundaries", "markers"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "title": { "type": "string" },
+          "floor": { "type": "integer", "minimum": 1 },
+          "sourceImage": { "type": "string" },
+          "sourceUrl": { "type": "string" },
+          "baseImage": { "type": "string", "description": "Custom base image when the instance has no game map art." },
+          "notes": { "type": "string" },
+          "path": {
+            "type": "array",
+            "items": {
+              "type": "object", "required": ["id", "points", "arrow"], "additionalProperties": false,
+              "properties": {
+                "id": { "$ref": "#/$defs/id" },
+                "points": { "type": "array", "items": { "$ref": "#/$defs/pt" }, "minItems": 2 },
+                "arrow": { "enum": ["none", "end", "both"] },
+                "style": { "enum": ["main", "alt", "optional"] }
+              }
+            }
+          },
+          "boundaries": {
+            "type": "array",
+            "items": {
+              "type": "object", "required": ["id", "points"], "additionalProperties": false,
+              "properties": {
+                "id": { "$ref": "#/$defs/id" },
+                "points": { "type": "array", "items": { "$ref": "#/$defs/pt" }, "minItems": 2 }
+              }
+            }
+          },
+          "markers": {
+            "type": "array",
+            "items": {
+              "type": "object", "required": ["id", "type", "pos"], "additionalProperties": false,
+              "properties": {
+                "id": { "$ref": "#/$defs/id" },
+                "type": { "enum": ["boss", "entrance", "transition", "note"] },
+                "pos": { "$ref": "#/$defs/pt" },
+                "order": { "type": "integer", "minimum": 1 },
+                "optional": { "type": "boolean" },
+                "text": { "type": "string" },
+                "toSection": { "$ref": "#/$defs/id" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

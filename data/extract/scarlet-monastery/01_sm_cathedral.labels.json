@@ -1,0 +1,24 @@
+{
+ "_title": "Cathedral",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "text": "1+2"
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End"
+ },
+ "y1": {
+  "kind": "label",
+  "text": "LFD end"
+ },
+ "_entrance": [
+  0.655,
+  0.92
+ ]
+}

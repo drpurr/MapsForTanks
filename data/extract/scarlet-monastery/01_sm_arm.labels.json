@@ -1,0 +1,19 @@
+{
+ "_title": "Armory",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.728,
+   0.1
+  ]
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "_entrance": [
+  0.57,
+  0.95
+ ]
+}

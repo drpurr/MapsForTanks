@@ -1,0 +1,39 @@
+{
+ "_title": "Chamber of Summoning",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.54,
+   0.06
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "To + from Headmaster"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Reliquary"
+ },
+ "y2": {
+  "kind": "transition",
+  "text": "To + from Headmaster"
+ },
+ "y3": {
+  "kind": "transition",
+  "text": "To + from Headmaster"
+ },
+ "y4": {
+  "kind": "transition",
+  "text": "To Barov"
+ }
+}

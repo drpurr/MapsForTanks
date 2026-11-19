@@ -1,0 +1,30 @@
+{
+ "b0": {
+  "kind": "boss",
+  "order": 2
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 1
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 3
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 4
+ },
+ "y0": {
+  "kind": "label",
+  "text": "LFD end"
+ },
+ "y1": {
+  "kind": "label",
+  "text": "End"
+ },
+ "_entrance": [
+  0.61,
+  0.07
+ ]
+}

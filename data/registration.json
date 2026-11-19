@@ -1,0 +1,1487 @@
+{
+ "maps-src/Ashenvale/Blackfathom Deeps/01_bfd01.jpg": {
+  "instance": "blackfathom-deeps",
+  "floor": 1,
+  "ok": true,
+  "inliers": 899,
+  "ratio": 0.953,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85330017,
+    -0.00018961,
+    0.23356179
+   ],
+   [
+    4.442e-05,
+    0.87459928,
+    2.68050442
+   ],
+   [
+    4e-08,
+    -2.8e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Ashenvale/Blackfathom Deeps/02_bfd02.jpg": {
+  "instance": "blackfathom-deeps",
+  "floor": 2,
+  "ok": true,
+  "inliers": 796,
+  "ratio": 0.943,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85354895,
+    5.047e-05,
+    0.14117617
+   ],
+   [
+    0.00010535,
+    0.87494264,
+    4.38503499
+   ],
+   [
+    1.7e-07,
+    1.5e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Blackrock Mountain (Searing Gorge - Burning Steppes)/Blackrock Depths - Detention Block (Lower) and Shadowforge City (Upper)/01_brd_01.jpeg": {
+  "instance": "blackrock-depths",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1142,
+  "ratio": 0.978,
+  "size": [
+   999,
+   646
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.00012197,
+    2.936e-05,
+    -1.0435759
+   ],
+   [
+    3.075e-05,
+    1.02959957,
+    -1.08188993
+   ],
+   [
+    9e-08,
+    5e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Blackrock Mountain (Searing Gorge - Burning Steppes)/Blackrock Depths - Detention Block (Lower) and Shadowforge City (Upper)/02_brd_02.jpeg": {
+  "instance": "blackrock-depths",
+  "floor": 2,
+  "ok": true,
+  "inliers": 1738,
+  "ratio": 0.974,
+  "size": [
+   999,
+   646
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.99998227,
+    -1.843e-05,
+    -0.99317834
+   ],
+   [
+    -1.108e-05,
+    1.02947742,
+    -0.01751029
+   ],
+   [
+    2e-08,
+    -8e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Blackrock Mountain (Searing Gorge - Burning Steppes)/Blackrock Depths - Detention Block (Lower) and Shadowforge City (Upper)/03_brd_03.jpeg": {
+  "instance": "blackrock-depths",
+  "floor": 2,
+  "ok": true,
+  "inliers": 1921,
+  "ratio": 0.977,
+  "size": [
+   999,
+   646
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.9999932,
+    4.511e-05,
+    -1.00867152
+   ],
+   [
+    -1.194e-05,
+    1.02953611,
+    -0.02237068
+   ],
+   [
+    -5e-08,
+    6e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Blackrock Mountain (Searing Gorge - Burning Steppes)/Blackrock Depths - Detention Block (Lower) and Shadowforge City (Upper)/04_brd_04.jpeg": {
+  "instance": "blackrock-depths",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1166,
+  "ratio": 0.977,
+  "size": [
+   999,
+   646
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.00013464,
+    3.48e-05,
+    -1.05125217
+   ],
+   [
+    2.589e-05,
+    1.02962032,
+    -1.08519886
+   ],
+   [
+    1e-07,
+    4e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Westfall/Deadmines/01_dm01.jpg": {
+  "instance": "deadmines",
+  "floor": 1,
+  "ok": true,
+  "inliers": 530,
+  "ratio": 0.983,
+  "size": [
+   753,
+   502
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.33083064,
+    -3.426e-05,
+    0.08324761
+   ],
+   [
+    -9.737e-05,
+    1.33073118,
+    0.14069419
+   ],
+   [
+    1.4e-07,
+    1.3e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Westfall/Deadmines/02_dm02.jpg": {
+  "instance": "deadmines",
+  "floor": 2,
+  "ok": true,
+  "inliers": 607,
+  "ratio": 0.992,
+  "size": [
+   753,
+   502
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.32970014,
+    -0.00044758,
+    0.38539167
+   ],
+   [
+    -0.00021797,
+    1.32989926,
+    0.2213495
+   ],
+   [
+    -5.6e-07,
+    -5.1e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - East (Warpwood Quarter)/01_dire_e01.jpg": {
+  "instance": "dire-maul",
+  "floor": 5,
+  "ok": true,
+  "inliers": 898,
+  "ratio": 0.962,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97812768,
+    -0.00016173,
+    0.35861669
+   ],
+   [
+    6.541e-05,
+    1.00382112,
+    0.89900259
+   ],
+   [
+    -7e-08,
+    -1.2e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - East (Warpwood Quarter)/02_dire_e02.jpg": {
+  "instance": "dire-maul",
+  "floor": 6,
+  "ok": true,
+  "inliers": 908,
+  "ratio": 0.967,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97816569,
+    -6.646e-05,
+    0.31860863
+   ],
+   [
+    2.959e-05,
+    1.00374432,
+    0.97341635
+   ],
+   [
+    -6e-08,
+    -1.3e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - Capital Gardens (West)/01_dire_w02.jpg": {
+  "instance": "dire-maul",
+  "floor": 2,
+  "ok": true,
+  "inliers": 879,
+  "ratio": 0.964,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97811596,
+    -1.073e-05,
+    0.30516436
+   ],
+   [
+    4.778e-05,
+    1.0037958,
+    0.91724485
+   ],
+   [
+    -6e-08,
+    -1.9e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - Capital Gardens (West)/02_dire_w01.jpg": {
+  "instance": "dire-maul",
+  "floor": 3,
+  "ok": true,
+  "inliers": 564,
+  "ratio": 0.961,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97818046,
+    0.00011873,
+    0.28172024
+   ],
+   [
+    0.00014047,
+    1.00403477,
+    0.87336129
+   ],
+   [
+    -8e-08,
+    1.2e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - Capital Gardens (West)/03_dire_w03.jpg": {
+  "instance": "dire-maul",
+  "floor": 4,
+  "ok": true,
+  "inliers": 830,
+  "ratio": 0.952,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97833693,
+    -0.00016584,
+    0.27890513
+   ],
+   [
+    7.453e-05,
+    1.00379357,
+    0.93477082
+   ],
+   [
+    1e-07,
+    -2e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Feralas/Dire Maul - Gordok Commons (North)/01_dire_maul_north_gordok_commons_map.jpg": {
+  "instance": "dire-maul",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1108,
+  "ratio": 0.964,
+  "size": [
+   1256,
+   791
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.80014048,
+    8.481e-05,
+    -2.92565762
+   ],
+   [
+    7.63e-06,
+    0.84641312,
+    0.13935242
+   ],
+   [
+    7e-08,
+    2.2e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Dun Morogh/Gnomeregan/01_gnomer01.jpg": {
+  "instance": "gnomeregan",
+  "floor": 1,
+  "ok": true,
+  "inliers": 872,
+  "ratio": 0.949,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85324513,
+    -0.00026225,
+    0.27219858
+   ],
+   [
+    -1.95e-06,
+    0.87451832,
+    2.69550111
+   ],
+   [
+    -2e-08,
+    -3.7e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Dun Morogh/Gnomeregan/02_gnomer02.jpg": {
+  "instance": "gnomeregan",
+  "floor": 2,
+  "ok": true,
+  "inliers": 953,
+  "ratio": 0.963,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.8534606,
+    -1.606e-05,
+    0.17271721
+   ],
+   [
+    -5.91e-06,
+    0.87480052,
+    6.19767782
+   ],
+   [
+    1e-07,
+    1e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Dun Morogh/Gnomeregan/03_gnomer03.jpg": {
+  "instance": "gnomeregan",
+  "floor": 4,
+  "ok": true,
+  "inliers": 1004,
+  "ratio": 0.971,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85390091,
+    0.00028745,
+    6.78734051
+   ],
+   [
+    0.00013823,
+    0.87520811,
+    0.7850194
+   ],
+   [
+    3.8e-07,
+    2.9e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Desolace/Mauraudon - The Wicked Grotto (Purple Crystals)/01_mar_01.jpg": {
+  "instance": "maraudon",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1316,
+  "ratio": 0.971,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97818805,
+    -7.429e-05,
+    -1.3873411
+   ],
+   [
+    -3.551e-05,
+    1.0037777,
+    2.73365549
+   ],
+   [
+    -6e-08,
+    -9e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Desolace/Maraudon - Foulspore Cavern (Orange Crystals)/01_mar_02.jpg": {
+  "instance": "maraudon",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1263,
+  "ratio": 0.969,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97798374,
+    -0.00016451,
+    -1.37580241
+   ],
+   [
+    -0.00013937,
+    1.00339503,
+    2.83318694
+   ],
+   [
+    -2.6e-07,
+    -4.1e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Desolace/Maraudon - Earth Song Falls\u00a0(Pristine Waters)/01_mar_esf.jpg": {
+  "instance": "maraudon",
+  "floor": 2,
+  "ok": true,
+  "inliers": 1713,
+  "ratio": 0.981,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97831824,
+    0.0002069,
+    0.17960347
+   ],
+   [
+    -5.41e-06,
+    1.00391338,
+    4.4567744
+   ],
+   [
+    -9e-08,
+    2.5e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Orgrimmar/Ragefire Chasm/01_rfc1.jpg": {
+  "instance": "ragefire-chasm",
+  "floor": 1,
+  "ok": true,
+  "inliers": 859,
+  "ratio": 0.977,
+  "size": [
+   828,
+   552
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.21003537,
+    -3.69e-06,
+    0.0610731
+   ],
+   [
+    4.27e-05,
+    1.21005147,
+    0.05315291
+   ],
+   [
+    -1e-07,
+    -1e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Thousand Needles/Razorfen Downs/01_razorfen_downs_map.jpg": {
+  "instance": "razorfen-downs",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1049,
+  "ratio": 0.971,
+  "size": [
+   1024,
+   718
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97885819,
+    -6.801e-05,
+    -1.50116219
+   ],
+   [
+    0.00011788,
+    0.93363898,
+    -2.184722
+   ],
+   [
+    1.8e-07,
+    -1.8e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Southern Barrens/Razorfen Kraul/01_rfk_map.jpg": {
+  "instance": "razorfen-kraul",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1255,
+  "ratio": 0.971,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97814608,
+    -9.022e-05,
+    0.3062067
+   ],
+   [
+    -3.092e-05,
+    1.00374561,
+    4.48356031
+   ],
+   [
+    -1.7e-07,
+    -1e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Tirisfal Glades/The Scarlet Monastary - The Graveyard/01_sm_graveyard.jpg": {
+  "instance": "scarlet-monastery",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1037,
+  "ratio": 0.958,
+  "size": [
+   1174,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85338498,
+    7.897e-05,
+    1.02333176
+   ],
+   [
+    -4.31e-05,
+    0.87490131,
+    -0.83007201
+   ],
+   [
+    1e-08,
+    1.1e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Tirisfal Glades/The Scarlet Monastery - The Library/01_sm_library.jpg": {
+  "instance": "scarlet-monastery",
+  "floor": 2,
+  "ok": true,
+  "inliers": 1527,
+  "ratio": 0.959,
+  "size": [
+   1174,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85326425,
+    9.888e-05,
+    1.04984356
+   ],
+   [
+    -5.024e-05,
+    0.87479399,
+    1.82577651
+   ],
+   [
+    -8e-08,
+    1.3e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Tirisfal Glades/The Scarlet Monastery - The Armory/01_sm_arm.jpg": {
+  "instance": "scarlet-monastery",
+  "floor": 3,
+  "ok": true,
+  "inliers": 988,
+  "ratio": 0.945,
+  "size": [
+   1174,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.8533897,
+    -3.143e-05,
+    0.1894503
+   ],
+   [
+    -3.34e-06,
+    0.87484299,
+    2.67596548
+   ],
+   [
+    -0.0,
+    6e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Tirisfal Glades/The Scarlet Monastery - The Cathedral/01_sm_cathedral.jpg": {
+  "instance": "scarlet-monastery",
+  "floor": 4,
+  "ok": true,
+  "inliers": 1305,
+  "ratio": 0.972,
+  "size": [
+   1174,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85323816,
+    -0.00016317,
+    0.26531446
+   ],
+   [
+    6.3e-07,
+    0.87454675,
+    0.97024266
+   ],
+   [
+    -2e-08,
+    -2.5e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Western Plaguelands/Scholomance/01_schol_01.jpg": {
+  "instance": "scholomance",
+  "floor": 1,
+  "ok": true,
+  "inliers": 695,
+  "ratio": 0.947,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97829678,
+    0.0001262,
+    0.19383698
+   ],
+   [
+    3.407e-05,
+    1.00387434,
+    0.95769927
+   ],
+   [
+    -4e-08,
+    -2e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Western Plaguelands/Scholomance/02_schol_02.jpg": {
+  "instance": "scholomance",
+  "floor": 2,
+  "ok": true,
+  "inliers": 811,
+  "ratio": 0.954,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97849084,
+    8.431e-05,
+    1.8983962
+   ],
+   [
+    8.568e-05,
+    1.00409046,
+    2.62596079
+   ],
+   [
+    8e-08,
+    1.7e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Western Plaguelands/Scholomance/03_schol_03.jpg": {
+  "instance": "scholomance",
+  "floor": 3,
+  "ok": true,
+  "inliers": 731,
+  "ratio": 0.922,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97827009,
+    -1.63e-05,
+    1.93295494
+   ],
+   [
+    -7.47e-06,
+    1.00386652,
+    0.94010956
+   ],
+   [
+    -1e-07,
+    -4e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Western Plaguelands/Scholomance/04_schol_04.jpg": {
+  "instance": "scholomance",
+  "floor": 4,
+  "ok": true,
+  "inliers": 747,
+  "ratio": 0.95,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.978569,
+    0.00017754,
+    1.85910695
+   ],
+   [
+    -3.638e-05,
+    1.00424919,
+    2.68095623
+   ],
+   [
+    1.9e-07,
+    3.7e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/01_sfk-cy.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 1,
+  "ok": true,
+  "inliers": 998,
+  "ratio": 0.971,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85381479,
+    0.00045847,
+    1.62762945
+   ],
+   [
+    3.063e-05,
+    0.87519517,
+    2.64564267
+   ],
+   [
+    1.9e-07,
+    6.2e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/02_sfk-dh.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 2,
+  "ok": true,
+  "inliers": 651,
+  "ratio": 0.96,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85335099,
+    -9.4e-07,
+    0.9960109
+   ],
+   [
+    -2.699e-05,
+    0.87449508,
+    4.52373507
+   ],
+   [
+    1e-08,
+    -1.8e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/03_sfk-ww1.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 7,
+  "ok": true,
+  "inliers": 790,
+  "ratio": 0.962,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85342985,
+    -4.342e-05,
+    0.17773755
+   ],
+   [
+    4.294e-05,
+    0.87488564,
+    0.86523948
+   ],
+   [
+    7e-08,
+    -2e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/04_sfk-vd.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 3,
+  "ok": true,
+  "inliers": 822,
+  "ratio": 0.959,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85338986,
+    -5.095e-05,
+    0.20002567
+   ],
+   [
+    9.468e-05,
+    0.87484502,
+    2.60404269
+   ],
+   [
+    4e-08,
+    1.1e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/05_sfk-lo-ob.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 4,
+  "ok": true,
+  "inliers": 644,
+  "ratio": 0.955,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85357815,
+    1.614e-05,
+    3.57214659
+   ],
+   [
+    7.249e-05,
+    0.874964,
+    6.12000879
+   ],
+   [
+    2e-07,
+    1.1e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/06_sfk-up-ob.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 5,
+  "ok": true,
+  "inliers": 717,
+  "ratio": 0.941,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.853395,
+    -4.05e-05,
+    3.59672205
+   ],
+   [
+    -4.2e-06,
+    0.87481386,
+    2.65803322
+   ],
+   [
+    4e-08,
+    -3e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Silverpine Forest/Shadowfang Keep/07_sfk-lo-go.jpg": {
+  "instance": "shadowfang-keep",
+  "floor": 6,
+  "ok": true,
+  "inliers": 804,
+  "ratio": 0.958,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85325553,
+    -0.00019822,
+    0.29704147
+   ],
+   [
+    1.083e-05,
+    0.87462461,
+    0.93088243
+   ],
+   [
+    4e-08,
+    -3e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Stormwind City/Stormwind Stockade/01_stock_map.jpg": {
+  "instance": "stormwind-stockade",
+  "floor": 1,
+  "ok": true,
+  "inliers": 764,
+  "ratio": 0.947,
+  "size": [
+   1168,
+   758
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85350101,
+    3.294e-05,
+    1.85548733
+   ],
+   [
+    -8.38e-06,
+    0.8747865,
+    4.47167811
+   ],
+   [
+    1.4e-07,
+    3e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Eastern Plaguelands/Stratholme - Main Gate (Crusader's Square)/01_stratholme_main_gate_map.jpg": {
+  "instance": "stratholme",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1392,
+  "ratio": 0.96,
+  "size": [
+   1024,
+   667
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97655536,
+    -3.502e-05,
+    -0.57672134
+   ],
+   [
+    -7.31e-06,
+    1.0019126,
+    -1.64467827
+   ],
+   [
+    -7e-08,
+    -3e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Eastern Plaguelands/Stratholme - Service Entrance (The Gauntlet)/01_stratholme_service_entrance.jpeg": {
+  "instance": "stratholme",
+  "floor": 2,
+  "ok": true,
+  "inliers": 1378,
+  "ratio": 0.973,
+  "size": [
+   940,
+   626
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    1.06611546,
+    -0.0004272,
+    -2.84450914
+   ],
+   [
+    -7.47e-05,
+    1.06603783,
+    -2.7466673
+   ],
+   [
+    -2.9e-07,
+    -6.5e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Badlands/Uldaman/01_uldaman_02.jpg": {
+  "instance": "uldaman",
+  "floor": 1,
+  "ok": true,
+  "inliers": 1145,
+  "ratio": 0.958,
+  "size": [
+   1024,
+   664
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.97817639,
+    -0.00012675,
+    2.03255374
+   ],
+   [
+    -5.137e-05,
+    1.00359972,
+    1.04851263
+   ],
+   [
+    -5e-08,
+    -1.6e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Badlands/Uldaman/02_uldaman_01.jpg": {
+  "instance": "uldaman",
+  "floor": 2,
+  "ok": true,
+  "inliers": 652,
+  "ratio": 0.959,
+  "size": [
+   1024,
+   689
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.9806218,
+    -6.203e-05,
+    -4.02330819
+   ],
+   [
+    5.101e-05,
+    0.96754729,
+    0.89298079
+   ],
+   [
+    1.7e-07,
+    -9e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Northern Barrens/Wailing Caverns/01_securedownload1-31.jpg": {
+  "instance": "wailing-caverns",
+  "floor": 1,
+  "ok": true,
+  "inliers": 916,
+  "ratio": 0.962,
+  "size": [
+   1172,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85327721,
+    3.594e-05,
+    0.1853803
+   ],
+   [
+    -2.843e-05,
+    0.87471538,
+    -0.76792639
+   ],
+   [
+    -9e-08,
+    2e-08,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ },
+ "maps-src/Tanaris/Zul'Farrak/01_zulfarrak_map.jpg": {
+  "instance": "zulfarrak",
+  "floor": 1,
+  "ok": true,
+  "inliers": 2887,
+  "ratio": 0.936,
+  "size": [
+   1176,
+   762
+  ],
+  "floorSize": [
+   1002,
+   668
+  ],
+  "H": [
+   [
+    0.85320048,
+    -6.027e-05,
+    -1.44817449
+   ],
+   [
+    -2.179e-05,
+    0.87858518,
+    -2.23018192
+   ],
+   [
+    -7e-08,
+    -1.4e-07,
+    1.0
+   ]
+  ],
+  "method": "sift"
+ }
+}

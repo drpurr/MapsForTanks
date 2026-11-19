@@ -1,0 +1,26 @@
+{
+ "_title": "The Wicked Grotto (Purple)",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.465,
+   0.55
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End"
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 2
+ },
+ "_entrance": [
+  0.8,
+  0.69
+ ]
+}

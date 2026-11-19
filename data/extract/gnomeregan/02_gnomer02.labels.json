@@ -1,0 +1,23 @@
+{
+ "_title": "The Dormitory",
+ "b0": {
+  "kind": "boss",
+  "order": 2,
+  "pos": [
+   0.71,
+   0.47
+  ]
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 3
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "From Hall"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "To Launch Bay / Tinker's Court"
+ }
+}

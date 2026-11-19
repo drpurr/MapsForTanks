@@ -1,0 +1,32 @@
+{
+ "_title": "Foulspore Cavern (Orange)",
+ "b0": {
+  "kind": "boss",
+  "order": 1,
+  "pos": [
+   0.29,
+   0.11
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y0": {
+  "kind": "label",
+  "text": "End"
+ },
+ "_extra": [
+  {
+   "kind": "boss",
+   "order": 2,
+   "pos": [
+    0.095,
+    0.34
+   ]
+  }
+ ],
+ "_entrance": [
+  0.65,
+  0.29
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "_title": "Tinkers' Court",
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 4
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Launch Bay"
+ }
+}

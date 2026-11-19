@@ -1,0 +1,36 @@
+{
+ "_title": "West: Prison of Immol'thar",
+ "y0": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 5,
+  "pos": [
+   0.537,
+   0.23
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "b2": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 4
+ },
+ "b4": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Capital"
+ }
+}

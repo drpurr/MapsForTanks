@@ -1,0 +1,26 @@
+{
+ "_title": "Shadowforge City (from teleport)",
+ "y0": {
+  "kind": "transition",
+  "text": "To Detention Block"
+ },
+ "b0": {
+  "kind": "boss",
+  "order": 12,
+  "pos": [
+   0.597,
+   0.648
+  ]
+ },
+ "b1": {
+  "kind": "ignore"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Teleport"
+ },
+ "_entrance": [
+  0.549,
+  0.7
+ ]
+}

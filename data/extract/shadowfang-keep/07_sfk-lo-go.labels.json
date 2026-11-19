@@ -1,0 +1,15 @@
+{
+ "_title": "Lord Godfrey's Chambers",
+ "b0": {
+  "kind": "boss",
+  "order": 5,
+  "pos": [
+   0.685,
+   0.33
+  ]
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "From Upper Observatory"
+ }
+}

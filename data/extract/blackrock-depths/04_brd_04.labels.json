@@ -1,0 +1,29 @@
+{
+ "_title": "Detention Block (end)",
+ "b0": {
+  "kind": "boss",
+  "order": 13
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 14
+ },
+ "y0": {
+  "kind": "transition",
+  "text": "From Shadowforge City"
+ },
+ "y2": {
+  "kind": "ignore"
+ },
+ "y3": {
+  "kind": "ignore"
+ },
+ "y1": {
+  "kind": "label",
+  "text": "End!"
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 15
+ }
+}

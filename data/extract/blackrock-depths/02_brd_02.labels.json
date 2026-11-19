@@ -1,0 +1,49 @@
+{
+ "_title": "Shadowforge City",
+ "b0": {
+  "kind": "boss",
+  "order": 11
+ },
+ "b1": {
+  "kind": "boss",
+  "order": 10
+ },
+ "y0": {
+  "kind": "label",
+  "text": "Teleport to start"
+ },
+ "b2": {
+  "kind": "boss",
+  "order": 9
+ },
+ "b3": {
+  "kind": "boss",
+  "order": 8
+ },
+ "b4": {
+  "kind": "boss",
+  "order": 7
+ },
+ "b5": {
+  "kind": "boss",
+  "order": 6
+ },
+ "b6": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "b7": {
+  "kind": "boss",
+  "order": 5
+ },
+ "b8": {
+  "kind": "boss",
+  "optional": true,
+  "text": "*"
+ },
+ "y1": {
+  "kind": "transition",
+  "text": "From Detention Block"
+ }
+}
