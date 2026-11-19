@@ -92,6 +92,9 @@ def main(only):
             sections.append(section(json.loads(ex_path.read_text()), labels, sid, urls.get(img.parent.name)))
         route = {"instance": inst["slug"], "mapId": inst["mapId"], "source": "mapsfortanks", "reviewed": False,
                  "sections": sections}
+        if out.exists():  # keep editor-only fields (run video, notes) when regenerating
+            old = json.loads(out.read_text())
+            route.update({k: old[k] for k in ("youtube", "notes") if k in old})
         errors = list(validator.iter_errors(route))
         if errors:
             print(f"INVALID {inst['slug']}: {errors[0].json_path}: {errors[0].message}")

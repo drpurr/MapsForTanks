@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import type { Instance, Route } from '../types'
+import { youtubeUrl } from '../youtube'
 import { findElement, findSection, removeElement, uploadBase } from './state'
 
 interface Props {
@@ -113,10 +115,38 @@ export function Inspector({ inst, route, secId, selected, edit, setSelected, ver
 
       <fieldset>
         <legend>Route</legend>
+        <YouTubeField key={route.youtube ?? ''} value={route.youtube}
+          onChange={(v) => edit((r) => { if (v) r.youtube = v; else delete r.youtube })} />
         <label className="row"><input type="checkbox" checked={route.reviewed}
           onChange={(e) => edit((r) => { r.reviewed = e.target.checked })} /> Reviewed</label>
         <p className="muted">Source: {route.source}. Reviewed routes are never overwritten by <code>build_routes.py</code>.</p>
       </fieldset>
     </aside>
+  )
+}
+
+/** Run video link. Accepts any common YouTube link and stores it in one standard form. */
+function YouTubeField({ value, onChange }: { value?: string; onChange: (v: string | undefined) => void }) {
+  const [draft, setDraft] = useState(value ?? '')
+  const [error, setError] = useState('')
+  const commit = () => {
+    if (!draft.trim()) { setError(''); if (value) onChange(undefined); return }
+    const url = youtubeUrl(draft)
+    if (!url) { setError('That isn’t a YouTube video link. Paste one like https://www.youtube.com/watch?v=… or https://youtu.be/…'); return }
+    setError('')
+    setDraft(url)
+    if (url !== value) onChange(url)
+  }
+  return (
+    <>
+      <label>YouTube video
+        <input type="url" inputMode="url" placeholder="https://youtu.be/…" value={draft} aria-invalid={!!error}
+          onChange={(e) => setDraft(e.target.value)} onBlur={commit}
+          onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); commit() } }} />
+      </label>
+      {error ? <p className="field-error" role="alert">{error}</p>
+        : <p className="muted">{value ? 'Shows a play icon next to the dungeon name.' : 'Optional. Leave empty and nothing shows.'}</p>}
+      {value && <button onClick={() => { setDraft(''); onChange(undefined) }}>Remove video</button>}
+    </>
   )
 }

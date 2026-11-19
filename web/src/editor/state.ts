@@ -99,6 +99,18 @@ export async function saveRoute(route: Route) {
   return data as { file: string }
 }
 
+/** Writes data/guides/<slug>.md; an empty guide removes the file. */
+export async function saveGuide(slug: string, text: string) {
+  const res = await fetch('/__editor/guide', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ slug, text }),
+  })
+  const data = await res.json()
+  if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`)
+  return data as { file: string; removed?: boolean }
+}
+
 export async function uploadBase(slug: string, file: File) {
   const name = file.name.toLowerCase().replace(/[^\w.-]+/g, '-')
   const res = await fetch(`/__editor/upload?slug=${slug}&name=${encodeURIComponent(name)}`, { method: 'POST', body: file })

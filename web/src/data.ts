@@ -16,9 +16,24 @@ async function getJson<T>(rel: string): Promise<T | null> {
   }
 }
 
+/** Written guide for a dungeon (data/guides/<slug>.md), or null when there isn't one. */
+export async function loadGuide(slug: string): Promise<string | null> {
+  try {
+    const res = await fetch(dataUrl(`guides/${slug}.md`), { cache: 'no-store' })
+    // a host's SPA fallback answers missing files with index.html
+    if (!res.ok || res.headers.get('content-type')?.includes('html')) return null
+    const text = await res.text()
+    return text.trim() ? text : null
+  } catch {
+    return null
+  }
+}
+
 export const loadInstances = async () =>
   (await getJson<{ instances: Instance[] }>('instances.json'))?.instances ?? []
 export const loadRouteIndex = async () => (await getJson<string[]>('routes/index.json')) ?? []
+/** slug -> run video URL, for dungeons that have one. */
+export const loadRouteVideos = async () => (await getJson<Record<string, string>>('routes/videos.json')) ?? {}
 export const loadRoute = (slug: string) => getJson<Route>(`routes/${slug}.json`)
 export const loadRegistration = async () =>
   (await getJson<Record<string, Registration>>('registration.json')) ?? {}

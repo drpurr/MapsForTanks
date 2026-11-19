@@ -11,19 +11,31 @@ const DATA = path.join(REPO, 'data')
 const SRC = path.join(REPO, 'maps-src')
 
 const TYPES: Record<string, string> = {
-  '.json': 'application/json', '.webp': 'image/webp', '.png': 'image/png',
+  '.json': 'application/json', '.md': 'text/markdown; charset=utf-8', '.webp': 'image/webp', '.png': 'image/png',
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
 }
 
 /** Files under data/ the dev server may serve. Raw PNGs and CV intermediates stay private. */
-const PUBLIC_DATA = /^(instances\.json|registration\.json|routes\/[a-z0-9-]+\.json|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
+const PUBLIC_DATA = /^(instances\.json|registration\.json|routes\/[a-z0-9-]+\.json|guides\/[a-z0-9-]+\.md|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
 
 /** The subset the public site needs; the build copies only these. */
-const SITE_DATA = /^(instances\.json|routes\/[a-z0-9-]+\.json|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
+const SITE_DATA = /^(instances\.json|routes\/[a-z0-9-]+\.json|guides\/[a-z0-9-]+\.md|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
 
 export function routeIndex(): string[] {
   const dir = path.join(DATA, 'routes')
   return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5)).sort() : []
+}
+
+/** slug -> run video, for the index list (so it needn't load every route file). */
+export function routeVideos(): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const slug of routeIndex()) {
+    try {
+      const r = JSON.parse(fs.readFileSync(path.join(DATA, 'routes', `${slug}.json`), 'utf8'))
+      if (typeof r.youtube === 'string') out[slug] = r.youtube
+    } catch { /* unreadable route: no video */ }
+  }
+  return out
 }
 
 function walk(dir: string, base = ''): string[] {
@@ -52,10 +64,15 @@ export function dataPlugin(): Plugin {
     configResolved(c) { config = c },
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        if (req.url?.split('?')[0] === '/data/routes/index.json') {
+        const generated: Record<string, () => unknown> = {
+          '/data/routes/index.json': routeIndex,
+          '/data/routes/videos.json': routeVideos,
+        }
+        const gen = generated[req.url?.split('?')[0] ?? '']
+        if (gen) {
           res.setHeader('Content-Type', 'application/json')
           res.setHeader('Cache-Control', 'no-store')
-          res.end(JSON.stringify(routeIndex()))
+          res.end(JSON.stringify(gen()))
           return
         }
         const file = req.url ? resolveRequest(req.url) : null
@@ -78,6 +95,7 @@ export function dataPlugin(): Plugin {
       }
       for (const rel of walk(DATA)) if (SITE_DATA.test(rel)) copy(path.join(DATA, rel), path.join(out, 'data', rel))
       fs.writeFileSync(path.join(out, 'data/routes/index.json'), JSON.stringify(routeIndex()))
+      fs.writeFileSync(path.join(out, 'data/routes/videos.json'), JSON.stringify(routeVideos()))
     },
   }
 }

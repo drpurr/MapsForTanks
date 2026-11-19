@@ -1,6 +1,7 @@
 // DEV-ONLY route editor backend. `apply: 'serve'` keeps this plugin (and its
 // endpoints) out of `vite build` entirely; the production site has no write path.
 //   POST /__editor/save    {slug, route}           -> validates, writes data/routes/<slug>.json
+//   POST /__editor/guide   {slug, text}            -> writes data/guides/<slug>.md (empty text deletes it)
 //   POST /__editor/upload  ?slug=..&name=.. (body)  -> writes data/custom/<slug>/<name> (base images)
 import fs from 'node:fs'
 import path from 'node:path'
@@ -50,6 +51,19 @@ export function editorPlugin(): Plugin {
             fs.mkdirSync(path.dirname(file), { recursive: true })
             fs.writeFileSync(file, JSON.stringify(route, null, 1) + '\n')
             return reply(200, { ok: true, file: path.relative(REPO, file) })
+          }
+          if (url.pathname === '/__editor/guide') {
+            const { slug, text } = JSON.parse((await body(req, 1024 * 1024)).toString('utf8'))
+            if (!SLUG.test(slug) || typeof text !== 'string') return reply(400, { error: 'bad slug or text' })
+            const file = path.join(REPO, 'data/guides', `${slug}.md`)
+            const rel = path.relative(REPO, file)
+            if (!text.trim()) {
+              fs.rmSync(file, { force: true })
+              return reply(200, { ok: true, file: rel, removed: true })
+            }
+            fs.mkdirSync(path.dirname(file), { recursive: true })
+            fs.writeFileSync(file, text.replace(/\r\n?/g, '\n').replace(/\s*$/, '\n'))
+            return reply(200, { ok: true, file: rel })
           }
           if (url.pathname === '/__editor/upload') {
             const slug = url.searchParams.get('slug') ?? '', name = url.searchParams.get('name') ?? ''

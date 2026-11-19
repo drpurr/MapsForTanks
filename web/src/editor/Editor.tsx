@@ -3,11 +3,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { MapView } from '../components/MapView'
 import { RouteOverlay } from '../components/RouteOverlay'
-import { loadRegistration, loadRoute, sectionBase } from '../data'
+import { loadGuide, loadRegistration, loadRoute, sectionBase } from '../data'
 import type { Instance, Pt, Registration, Route } from '../types'
 import { setNavGuard } from '../navGuard'
+import { GuideEditor } from './GuideEditor'
 import { Inspector } from './Inspector'
-import { findElement, findSection, newId, removeElement, saveRoute, useHistory, type Tool } from './state'
+import { findElement, findSection, newId, removeElement, saveGuide, saveRoute, useHistory, type Tool } from './state'
 
 const TOOLS: [Tool, string, string][] = [
   ['select', 'V', 'Select / drag'], ['path', 'P', 'Path'], ['boundary', 'B', 'Pull boundary'],
@@ -25,19 +26,30 @@ const clamp = (v: number) => Math.min(1, Math.max(0, Math.round(v * 10000) / 100
 export default function Editor({ inst }: { inst: Instance }) {
   const [initial, setInitial] = useState<Route | null>(null)
   const [reg, setReg] = useState<Record<string, Registration>>({})
+  const [guide, setGuide] = useState<string | null>(null)
   useEffect(() => {
+    loadGuide(inst.slug).then((g) => setGuide(g ?? ''))
     loadRoute(inst.slug).then((r) =>
       setInitial(r ?? { instance: inst.slug, mapId: inst.mapId, source: 'manual', reviewed: false, sections: [] }))
     loadRegistration().then(setReg)
   }, [inst])
-  if (!initial) return <p>Loading…</p>
-  return <EditorInner inst={inst} initial={initial} reg={reg} />
+  if (!initial || guide === null) return <p>Loading…</p>
+  return <EditorInner inst={inst} initial={initial} initialGuide={guide} reg={reg} />
 }
 
 type Drag = { id: string; vertex?: number; start: Pt; orig: Pt[] | Pt }
 
-function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; reg: Record<string, Registration> }) {
+function EditorInner({ inst, initial, initialGuide, reg }: {
+  inst: Instance; initial: Route; initialGuide: string; reg: Record<string, Registration>
+}) {
   const h = useHistory(initial)
+  /** The guide is a separate file (data/guides/<slug>.md) with its own saved state; Save writes both. */
+  const [guide, setGuide] = useState(initialGuide)
+  const [savedGuide, setSavedGuide] = useState(initialGuide)
+  const guideDirty = guide !== savedGuide
+  const dirty = h.dirty || guideDirty
+  const guideRef = useRef(guide)
+  useEffect(() => { guideRef.current = guide }, [guide])
   const [secId, setSecId] = useState<string | null>(initial.sections[0]?.id ?? null)
   const [tool, setTool] = useState<Tool>('select')
   const [selected, setSelected] = useState<string | null>(null)
@@ -62,9 +74,9 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
     return () => ro.disconnect()
   }, [])
   const drag = useRef<Drag | null>(null)
-  const dirtyRef = useRef(h.dirty)
+  const dirtyRef = useRef(dirty)
   const routeRef = useRef(h.route)
-  useEffect(() => { dirtyRef.current = h.dirty }, [h.dirty])
+  useEffect(() => { dirtyRef.current = dirty }, [dirty])
   useEffect(() => { routeRef.current = h.route }, [h.route])
 
   const sec = findSection(h.route, secId)
@@ -96,16 +108,22 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
   const save = useCallback(async (reason = 'Saved', route: Route = h.route) => {
     setStatus('Saving…')
     try {
-      const { file } = await saveRoute(route)
+      const text = guideRef.current
+      const files = [(await saveRoute(route)).file]
       // Only mark clean if nothing was edited while the save was in flight.
       if (routeRef.current === route) h.setDirty(false)
-      setStatus(`${reason} ${file} · ${new Date().toLocaleTimeString()}`)
+      if (text !== savedGuide) {
+        const g = await saveGuide(inst.slug, text)
+        setSavedGuide(text)
+        files.push(g.removed ? `(removed ${g.file})` : g.file)
+      }
+      setStatus(`${reason} ${files.join(' + ')} · ${new Date().toLocaleTimeString()}`)
       return true
     } catch (e) {
       setStatus(`Save failed: ${e instanceof Error ? e.message : e}`)
       return false
     }
-  }, [h])
+  }, [h, inst.slug, savedGuide])
 
   /** Changing a section's floor is a floor switch too: apply it and autosave the result. */
   const changeFloor = useCallback((floor: number) => {
@@ -167,10 +185,10 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
   }, [finishDraft, draft.length, selected, vertex, deletePoint, editSec, h, save])
 
   useEffect(() => {
-    const warn = (e: BeforeUnloadEvent) => { if (h.dirty) e.preventDefault() }
+    const warn = (e: BeforeUnloadEvent) => { if (dirty) e.preventDefault() }
     addEventListener('beforeunload', warn)
     return () => removeEventListener('beforeunload', warn)
-  }, [h.dirty])
+  }, [dirty])
 
   const onBackground = (e: React.PointerEvent) => {
     if (!sec || e.button !== 0) return
@@ -223,7 +241,7 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
     setVertex(null)
     setDraft([])
     if (next) { h.replace(next); routeRef.current = next; save('Autosaved', next) }
-    else if (h.dirty && id !== secId) save('Autosaved')
+    else if (dirty && id !== secId) save('Autosaved')
   }
   const addSection = () => {
     const id = newId('s')
@@ -253,7 +271,7 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
         </div>
         <button onClick={h.undo} title="Undo (Ctrl+Z)">Undo</button>
         <button onClick={h.redo} title="Redo (Ctrl+Shift+Z)">Redo</button>
-        <button className="primary" onClick={() => save()} title="Save (Ctrl+S)">Save{h.dirty ? ' •' : ''}</button>
+        <button className="primary" onClick={() => save()} title="Save (Ctrl+S)">Save{dirty ? ' •' : ''}</button>
         <span className="status">{status}</span>
       </header>
 
@@ -306,6 +324,8 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
           ) : (
             <p className="empty">{sec ? 'This instance has no game map art — upload a custom base image in the Section panel.' : 'Add a section to start drawing.'}</p>
           )}
+          <GuideEditor text={guide} onChange={setGuide} sections={h.route.sections} current={sec?.title}
+            dirty={guideDirty} onSave={() => save()} />
         </div>
 
         <Inspector inst={inst} route={h.route} secId={secId} selected={selected} edit={h.edit} setSelected={setSelected}
@@ -316,7 +336,7 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
         <div className="modal-backdrop" role="presentation">
           <div className="modal" role="alertdialog" aria-modal="true" aria-labelledby="leave-title">
             <h2 id="leave-title">Unsaved changes</h2>
-            <p>Save your changes to <code>{inst.slug}.json</code> before leaving the editor?</p>
+            <p>Save your changes to <code>{inst.slug}.json</code>{guideDirty && <> and <code>{inst.slug}.md</code></>} before leaving the editor?</p>
             {status.startsWith('Save failed') && <p className="error">{status}</p>}
             <div className="modal-actions">
               <button onClick={() => setLeaveTo(null)} autoFocus>Stay</button>
