@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/": {
+      "targetKind": "existing-ui",
+      "projectId": "b9b28447-8b4d-4ebc-8509-030820e468fb",
+      "baselineDraftId": "5b296a2e-ac6d-461b-8dd4-d2e5f787c0a6",
+      "activeDraftId": "5b296a2e-ac6d-461b-8dd4-d2e5f787c0a6",
+      "designSystemPath": ".superdesign/design-system.md",
+      "contextFiles": [
+        ".superdesign/design-system.md",
+        "web/src/pages/IndexPage.tsx",
+        "web/src/components/MapView.tsx",
+        "web/src/components/RouteOverlay.tsx",
+        "web/src/index.css"
+      ],
+      "fingerprints": {
+        ".superdesign/design-system.md": "ce727d7b2eceda43302c7c88a481d33c4e9865767482b554b9d20abfad502de5",
+        "web/src/pages/IndexPage.tsx": "e66999b08c3f83aa2c3d5eb904a48e51a595faa9922be0f087b1c4c55afad48a",
+        "web/src/components/MapView.tsx": "f94d86a918705eed9c1b28481b6c62d2db63f4d0c3dc67bc9f44845d90a67969",
+        "web/src/components/RouteOverlay.tsx": "3d2af075610e7863267a8136be98efb9787503d92f85efaca29bf0b8463358a8",
+        "web/src/index.css": "2d7cce0c28f816a43d4841e01a3587ecae7c91812e75c135dd891845950e8612"
+      },
+      "components": [],
+      "drafts": {
+        "5b296a2e-ac6d-461b-8dd4-d2e5f787c0a6": {
+          "title": "Current route book",
+          "visualDirection": "pixel-perfect reproduction of the desktop index",
+          "currentVersion": 1
+        },
+        "1d048534-2f89-460b-96bc-94a7776c49a6": {
+          "title": "Tank Maps \u2014 Map-First Atlas",
+          "visualDirection": "map-first atlas: preview dominant on the left, contents rail on the right",
+          "parentDraftId": "5b296a2e-ac6d-461b-8dd4-d2e5f787c0a6",
+          "currentVersion": 1
+        },
+        "0048a6e4-e11b-4371-8ff1-7f06983ade78": {
+          "title": "Tank Maps Field Guide",
+          "visualDirection": "scannable field guide: compact masthead, full-width rows, short map band",
+          "parentDraftId": "5b296a2e-ac6d-461b-8dd4-d2e5f787c0a6",
+          "currentVersion": 1
+        }
+      },
+      "updatedAt": "2026-11-19T13:51:01Z"
+    }
+  }
+}
