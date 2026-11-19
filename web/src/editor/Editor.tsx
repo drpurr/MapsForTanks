@@ -49,6 +49,7 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
   const [vertex, setVertex] = useState<number | null>(null)
   /** Hash the user tried to navigate to while there were unsaved changes. */
   const [leaveTo, setLeaveTo] = useState<string | null>(null)
+  useEffect(() => { document.title = `Editing ${inst.name} – Tank Maps` }, [inst])
   const svgRef = useRef<SVGSVGElement>(null)
   const barRef = useRef<HTMLElement>(null)
   const [barH, setBarH] = useState(56)

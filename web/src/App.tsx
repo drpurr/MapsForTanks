@@ -21,6 +21,7 @@ type NavState = { navIdx?: number } | null
 function useHash() {
   const [hash, setHash] = useState(location.hash)
   const idx = useRef((history.state as NavState)?.navIdx ?? 0)
+  const page = useRef(location.hash.split('/').slice(0, 3).join('/'))
   const restoring = useRef(false)
   useEffect(() => {
     if (typeof (history.state as NavState)?.navIdx !== 'number') history.replaceState({ navIdx: idx.current }, '')
@@ -36,7 +37,10 @@ function useHash() {
       idx.current = typeof st === 'number' ? st : idx.current + 1
       if (typeof st !== 'number') history.replaceState({ navIdx: idx.current }, '')
       setHash(location.hash)
-      window.scrollTo(0, 0)
+      // New page: start at the top. Another section of the same dungeon: keep the scroll position.
+      const nextPage = location.hash.split('/').slice(0, 3).join('/')
+      if (nextPage !== page.current) window.scrollTo(0, 0)
+      page.current = nextPage
     }
     addEventListener('hashchange', on)
     return () => removeEventListener('hashchange', on)
@@ -55,10 +59,10 @@ export default function App() {
 
   if (!instances) return <div className="book" aria-busy="true" />
   if (instances.length === 0) return <LoadProblem />
-  const [, kind, slug] = path.split('/')
+  const [, kind, slug, sub] = path.split('/')
   const inst = instances.find((i) => i.slug === slug)
 
-  if (kind === 'i' && inst) return <InstancePage key={inst.slug} inst={inst} />
+  if (kind === 'i' && inst) return <InstancePage key={inst.slug} inst={inst} sub={sub} />
   if (kind === 'edit' && inst && Editor) {
     return <Suspense fallback={<p>Loading editor…</p>}><Editor key={inst.slug} inst={inst} /></Suspense>
   }

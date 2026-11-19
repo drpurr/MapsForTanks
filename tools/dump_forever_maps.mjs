@@ -14,6 +14,7 @@ import sharp from "sharp";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
+const EXTERNAL = join(ROOT, "maps-src/external/atlas-of-azeroth-forever");
 const TILE = 256, COLS = 4, ROWS = 3;
 const CROP = { width: 1002, height: 668 }; // visible area of the classic world-map frame
 process.env.WOW_INSTALL_PATH ??= "/run/media/nbatroff/Games/Battle.net/World of Warcraft";
@@ -119,6 +120,25 @@ async function main() {
       mapId: id, directory: r.Directory, type: r.InstanceType === 2 ? "raid" : "dungeon",
       zone: a.zone ?? null, art: dir ?? null,
     };
+    if (!dir && a.external) {
+      // No art in the client: use maps supplied in maps-src/external (with their credit).
+      const inst = { slug, name: r.MapName_lang, ...base, art: "external", sources: a.src ?? [], floors: [] }
+      const selected = !only || only === slug || only === String(id)
+      const outDir = join(DATA, "maps", slug)
+      if (selected) mkdirSync(outDir, { recursive: true })
+      for (const [i, ext] of a.external.entries()) {
+        const n = i + 1, src = join(EXTERNAL, ext.file)
+        const meta = await sharp(src).metadata()
+        if (selected) await sharp(src).webp({ quality: 90 }).toFile(join(outDir, `${n}.webp`))
+        const credit = aliases._credits?.[ext.credit]
+        if (!credit) throw new Error(`${slug}: unknown credit "${ext.credit}" (add it to _credits)`)
+        inst.floors.push({ floor: n, artFloor: null, label: ext.label ?? `Floor ${n}`, image: `maps/${slug}/${n}.webp`,
+          width: meta.width, height: meta.height, credit })
+      }
+      if (selected) console.log(`${slug}: ${inst.floors.length} floor(s) from maps-src/external`)
+      instances.push(inst)
+      continue
+    }
     if (!dir) {
       missing.push({ slug, mapId: id, name: r.MapName_lang, tried: candidates });
       instances.push({ slug, name: r.MapName_lang, ...base, sources: a.src ?? [], floors: [] });
