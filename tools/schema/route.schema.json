@@ -57,7 +57,7 @@
               "type": "object", "required": ["id", "type", "pos"], "additionalProperties": false,
               "properties": {
                 "id": { "$ref": "#/$defs/id" },
-                "type": { "enum": ["boss", "entrance", "transition", "note"] },
+                "type": { "enum": ["boss", "entrance", "transition", "note", "los"] },
                 "pos": { "$ref": "#/$defs/pt" },
                 "order": { "type": "integer", "minimum": 1 },
                 "optional": { "type": "boolean" },

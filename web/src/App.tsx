@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { loadInstances, loadRouteIndex } from './data'
+import { LoadProblem } from './components/ErrorBoundary'
 import { allowNav } from './navGuard'
 import { IndexPage } from './pages/IndexPage'
 import { InstancePage } from './pages/InstancePage'
@@ -53,6 +54,7 @@ export default function App() {
   }, [path])
 
   if (!instances) return <div className="book" aria-busy="true" />
+  if (instances.length === 0) return <LoadProblem />
   const [, kind, slug] = path.split('/')
   const inst = instances.find((i) => i.slug === slug)
 
