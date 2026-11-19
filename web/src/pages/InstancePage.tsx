@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { MapView } from '../components/MapView'
+import { GuideSidebar } from '../components/GuideSidebar'
 import { MapCredit } from '../components/MapCredit'
 import { RouteOverlay } from '../components/RouteOverlay'
+import { YouTubeLink } from '../components/YouTubeLink'
 import { ZoomPan } from '../components/ZoomPan'
-import { loadRoute, routeBounds, routeSummary, sectionBase, transitionTarget } from '../data'
-import crestSmall from '../assets/crest-small.webp'
+import { loadGuide, loadRoute, routeBounds, routeSummary, sectionBase, transitionTarget } from '../data'
 import type { Instance, Marker, Route } from '../types'
 
 /**
@@ -15,6 +16,12 @@ import type { Instance, Marker, Route } from '../types'
 export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
   const [route, setRoute] = useState<Route | null | undefined>(undefined)
   useEffect(() => { loadRoute(inst.slug).then(setRoute) }, [inst])
+  const [loadedGuide, setLoadedGuide] = useState<{ slug: string; text: string | null }>()
+  useEffect(() => { loadGuide(inst.slug).then((text) => setLoadedGuide({ slug: inst.slug, text })) }, [inst])
+  const guide = loadedGuide?.slug === inst.slug ? loadedGuide.text : null
+  const [guideHidden, setGuideHidden] = useState(() => readGuideHidden())
+  const toggleGuide = (hidden: boolean) => { setGuideHidden(hidden); writeGuideHidden(hidden) }
+  const showGuide = guide !== null && !guideHidden
 
   const sections = useMemo(() => route?.sections ?? [], [route])
   const otherFloors = inst.floors.filter((f) => !sections.some((s) => s.floor === f.floor))
@@ -42,9 +49,14 @@ export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
 
   return (
     <main className="instance">
-      <a href="#/" className="back"><img src={crestSmall} alt="" width={33} height={44} />Back to all dungeons</a>
       <header className="instance-head">
-        <h1>{inst.name}</h1>
+        <div className="title-row">
+          <h1>{inst.name}</h1>
+          <YouTubeLink url={route?.youtube} name={inst.name} />
+          {guide !== null && guideHidden && (
+            <button type="button" className="guide-show" onClick={() => toggleGuide(false)}>Show guide</button>
+          )}
+        </div>
         <p className="where">
           {inst.type === 'raid' ? 'Raid' : 'Dungeon'}{inst.zone ? ` in ${inst.zone}` : ''}
           {sections.length > 0 && `. ${routeSummary(sections)}.`}
@@ -76,6 +88,8 @@ export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
         </nav>
       )}
 
+      <div className={showGuide ? 'instance-body with-guide' : 'instance-body'}>
+      <div className="instance-map">
       {base ? (
         <ZoomPan key={sec?.id ?? `floor-${floor}`} aspect={base.size[1] / base.size[0]} focus={focus}>
           <MapView base={base.src} size={base.size}>
@@ -93,6 +107,9 @@ export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
         {sec?.notes && <p className="note">{sec.notes}</p>}
         {!sec && base && <p className="credit">No route on this map yet.</p>}
       </footer>
+      </div>
+      {showGuide && <GuideSidebar text={guide} current={sec?.title} onHide={() => toggleGuide(true)} />}
+      </div>
       {sec?.sourceUrl && (
         <p className="credit-line">
           Drawn from the <a href={sec.sourceUrl} target="_blank" rel="noreferrer">MapsForTanks guide</a>.
@@ -101,6 +118,14 @@ export function InstancePage({ inst, sub }: { inst: Instance; sub?: string }) {
       {mapCredit && <MapCredit credit={mapCredit} className="credit-line" />}
     </main>
   )
+}
+
+const GUIDE_KEY = 'tankmaps.guideHidden'
+function readGuideHidden() {
+  try { return localStorage.getItem(GUIDE_KEY) === '1' } catch { return false }
+}
+function writeGuideHidden(hidden: boolean) {
+  try { if (hidden) localStorage.setItem(GUIDE_KEY, '1'); else localStorage.removeItem(GUIDE_KEY) } catch { /* storage blocked */ }
 }
 
 function Legend({ links }: { links: boolean }) {

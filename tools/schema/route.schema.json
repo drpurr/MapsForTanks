@@ -15,6 +15,11 @@
     "source": { "enum": ["mapsfortanks", "manual"] },
     "reviewed": { "type": "boolean" },
     "notes": { "type": "string" },
+    "youtube": {
+      "type": "string",
+      "description": "Run video shown next to the dungeon name. Canonical watch URL, optional start time.",
+      "pattern": "^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]{11}(&t=[0-9]+s)?$"
+    },
     "sections": {
       "type": "array",
       "items": {

@@ -74,6 +74,8 @@ export interface Route {
   source: 'mapsfortanks' | 'manual'
   reviewed: boolean
   notes?: string
+  /** Optional run video, stored as https://www.youtube.com/watch?v=<id>[&t=<n>s] */
+  youtube?: string
   sections: Section[]
 }
 

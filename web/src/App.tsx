@@ -1,8 +1,10 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
-import { loadInstances, loadRouteIndex } from './data'
+import { loadInstances, loadRouteIndex, loadRouteVideos } from './data'
 import { LoadProblem } from './components/ErrorBoundary'
+import { NavBar, type NavSection } from './components/NavBar'
+import { CreditsPage } from './pages/CreditsPage'
 import { allowNav } from './navGuard'
-import { IndexPage } from './pages/IndexPage'
+import { IndexPage, type Filter } from './pages/IndexPage'
 import { InstancePage } from './pages/InstancePage'
 import type { Instance } from './types'
 
@@ -52,19 +54,33 @@ export default function App() {
   const path = useHash()
   const [instances, setInstances] = useState<Instance[] | null>(null)
   const [routed, setRouted] = useState<Set<string>>(new Set())
+  const [videos, setVideos] = useState<Record<string, string>>({})
   useEffect(() => {
     loadInstances().then(setInstances)
     loadRouteIndex().then((l) => setRouted(new Set(l)))
+    loadRouteVideos().then(setVideos)
   }, [path])
 
   if (!instances) return <div className="book" aria-busy="true" />
   if (instances.length === 0) return <LoadProblem />
-  const [, kind, slug, sub] = path.split('/')
+  const [route, query = ''] = path.split('?')
+  const [, kind, slug, sub] = route.split('/')
   const inst = instances.find((i) => i.slug === slug)
 
-  if (kind === 'i' && inst) return <InstancePage key={inst.slug} inst={inst} sub={sub} />
   if (kind === 'edit' && inst && Editor) {
     return <Suspense fallback={<p>Loading editor…</p>}><Editor key={inst.slug} inst={inst} /></Suspense>
   }
-  return <IndexPage instances={instances} routed={routed} />
+  const show = new URLSearchParams(query).get('show')
+  const filter: Filter = show === 'raid' || show === 'routes' ? show : 'all'
+  const page = kind === 'i' && inst ? 'instance' : kind === 'credits' ? 'credits' : 'index'
+  const nav: NavSection = page === 'credits' ? 'credits' : page === 'index' ? (filter === 'raid' ? 'raids' : 'dungeons')
+    : inst?.type === 'raid' ? 'raids' : 'dungeons'
+  return (
+    <>
+      <NavBar current={nav} page={`${page}/${slug ?? ''}`} />
+      {page === 'instance' && inst ? <InstancePage key={inst.slug} inst={inst} sub={sub} />
+        : page === 'credits' ? <CreditsPage />
+        : <IndexPage instances={instances} routed={routed} videos={videos} filter={filter} />}
+    </>
+  )
 }

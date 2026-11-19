@@ -1,6 +1,6 @@
 // Builds the web logo assets from the master crest SVG.
 //   brand/tank-maps-crest.svg  (source; 3.4 MB traced artwork, not shipped)
-//   -> web/src/assets/crest.webp, crest-small.webp   (UI)
+//   -> web/src/assets/crest.webp, crest-small.webp, crest-gem.webp (UI: hero, small, nav mark)
 //   -> web/public/favicon.png (crest gem), apple-touch-icon.png (full crest)
 // usage: node tools/make_logo.mjs
 import { readFileSync, mkdirSync } from 'node:fs'
@@ -46,6 +46,8 @@ const gem = await sharp(crest).extract({
   width: Math.round(GEM.w * cw) + 2 * m, height: Math.round(GEM.h * ch) + 2 * m,
 }).png().toBuffer()
 const gemIcon = await sharp(gem).resize({ width: 60, height: 60, fit: 'inside' }).toBuffer()
+// Nav mark: the same gem, at 2x for a ~32px display height.
+await sharp(gem).resize({ height: 64 }).webp({ quality: 90, alphaQuality: 100 }).toFile(join(assets, 'crest-gem.webp'))
 await sharp({ create: { width: 64, height: 64, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } })
   .composite([{ input: gemIcon, gravity: 'centre' }]).png().toFile(join(pub, 'favicon.png'))
 await (await square(180, 18, STONE)).toFile(join(pub, 'apple-touch-icon.png'))

@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { MapCredit } from '../components/MapCredit'
 import { MapView } from '../components/MapView'
+import { HERO_CREST_ID } from '../components/NavBar'
 import { RouteOverlay } from '../components/RouteOverlay'
+import { YouTubeLink } from '../components/YouTubeLink'
 import { loadRoute, routeSummary, sectionBase } from '../data'
 import crest from '../assets/crest.webp'
 import type { Instance, Route } from '../types'
 
-type Filter = 'all' | 'routes' | 'raid'
-const FILTERS: [Filter, string][] = [['all', 'Everything'], ['routes', 'Has a route'], ['raid', 'Raids']]
+export type Filter = 'all' | 'routes' | 'raid'
+// Raids are reached from the navbar (#/?show=raid), so the switch only offers these two views.
+const FILTERS: [Filter, string][] = [['all', 'Everything'], ['routes', 'Has a route']]
 const FOREVER = 'Only in WoW Forever'
 
 /** Small hand-drawn arrow, the same ink as the routes: marks instances that have one. */
@@ -20,8 +23,9 @@ function RouteGlyph() {
   )
 }
 
-export function IndexPage({ instances, routed }: { instances: Instance[]; routed: Set<string> }) {
-  const [filter, setFilter] = useState<Filter>('all')
+/** `filter` comes from the URL (#/?show=routes|raid) so the navbar and links can point at a view. */
+export function IndexPage({ instances, routed, videos, filter }:
+  { instances: Instance[]; routed: Set<string>; videos: Record<string, string>; filter: Filter }) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState<string | null>(null)
   const cache = useRef(new Map<string, Route | null>())
@@ -56,16 +60,17 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
   return (
     <div className="book">
       <header className="masthead">
-        <h1 className="wordmark"><img src={crest} alt="Tank Maps" width={135} height={180} /></h1>
+        <h1 className="wordmark" id={HERO_CREST_ID}><img src={crest} alt="Tank Maps" width={135} height={180} /></h1>
         <p className="lede">Pull routes for every WoW Forever dungeon and raid, drawn on the in-game maps.</p>
         <div className="controls">
           <label className="search">
             <span className="visually-hidden">Find a dungeon or zone</span>
             <input type="search" placeholder="Find a dungeon or zone" value={query} onChange={(e) => setQuery(e.target.value)} />
           </label>
-          <div className="segmented" role="radiogroup" aria-label="Show">
+          <div className="segmented" aria-label="Show">
             {FILTERS.map(([f, label]) => (
-              <button key={f} role="radio" aria-checked={filter === f} className={filter === f ? 'on' : ''} onClick={() => setFilter(f)}>{label}</button>
+              <a key={f} href={f === 'all' ? '#/' : `#/?show=${f}`} aria-current={filter === f ? 'true' : undefined}
+                className={filter === f ? 'on' : ''}>{label}</a>
             ))}
           </div>
         </div>
@@ -86,6 +91,7 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
                       {routed.has(i.slug) ? <RouteGlyph /> : i.floors.length === 0 && <span className="kind">no map</span>}
                       {routed.has(i.slug) && <span className="visually-hidden">(has a route)</span>}
                     </a>
+                    <YouTubeLink url={videos[i.slug]} name={i.name} size="small" />
                     {import.meta.env.DEV && <a className="edit-link" href={`#/edit/${i.slug}`}>edit</a>}
                   </li>
                 ))}
