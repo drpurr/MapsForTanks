@@ -1,5 +1,6 @@
 // Serves the repo's data/ and maps-src/ folders to the app.
-// dev: middleware under /data/* and /maps-src/*; build: copies the public subset into outDir.
+// dev: middleware under /data/* and /maps-src/*; build: copies only what the public site uses into outDir.
+// registration.json and maps-src/ (the original drawings) are served in dev for the editor only.
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -14,8 +15,11 @@ const TYPES: Record<string, string> = {
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
 }
 
-/** Files under data/ the site may read. Raw PNGs and CV intermediates stay private. */
+/** Files under data/ the dev server may serve. Raw PNGs and CV intermediates stay private. */
 const PUBLIC_DATA = /^(instances\.json|registration\.json|routes\/[a-z0-9-]+\.json|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
+
+/** The subset the public site needs; the build copies only these. */
+const SITE_DATA = /^(instances\.json|routes\/[a-z0-9-]+\.json|maps\/[a-z0-9-]+\/\d+\.webp|custom\/[a-z0-9-]+\/[\w.-]+\.(webp|png|jpe?g))$/
 
 export function routeIndex(): string[] {
   const dir = path.join(DATA, 'routes')
@@ -72,10 +76,8 @@ export function dataPlugin(): Plugin {
         fs.mkdirSync(path.dirname(to), { recursive: true })
         fs.copyFileSync(from, to)
       }
-      for (const rel of walk(DATA)) if (PUBLIC_DATA.test(rel)) copy(path.join(DATA, rel), path.join(out, 'data', rel))
+      for (const rel of walk(DATA)) if (SITE_DATA.test(rel)) copy(path.join(DATA, rel), path.join(out, 'data', rel))
       fs.writeFileSync(path.join(out, 'data/routes/index.json'), JSON.stringify(routeIndex()))
-      for (const rel of walk(SRC)) if (TYPES[path.extname(rel).toLowerCase()] && !rel.endsWith('.json'))
-        copy(path.join(SRC, rel), path.join(out, 'maps-src', rel))
     },
   }
 }

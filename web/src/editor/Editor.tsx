@@ -11,13 +11,14 @@ import { findElement, findSection, newId, removeElement, saveRoute, useHistory, 
 
 const TOOLS: [Tool, string, string][] = [
   ['select', 'V', 'Select / drag'], ['path', 'P', 'Path'], ['boundary', 'B', 'Pull boundary'],
-  ['boss', 'O', 'Boss'], ['entrance', 'E', 'Entrance'], ['transition', 'T', 'Transition'], ['note', 'N', 'Note'],
+  ['boss', 'O', 'Boss'], ['entrance', 'E', 'Start'], ['transition', 'T', 'Transition'], ['note', 'N', 'Note'], ['los', 'L', 'LOS pull'],
 ]
 const HINT: Record<Tool, string> = {
   select: 'Click to select · drag markers, lines or points · click a point then Delete to remove it (or Alt+click / double-click it)',
   path: 'Click to add points · Enter or double-click to finish · Backspace removes last · Esc cancels',
   boundary: 'Click two points',
   boss: 'Click to place; order auto-increments', entrance: 'Click to place', transition: 'Click to place', note: 'Click to place',
+  los: 'Click where the tank stands to break line of sight',
 }
 const clamp = (v: number) => Math.min(1, Math.max(0, Math.round(v * 10000) / 10000))
 
@@ -49,6 +50,16 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
   /** Hash the user tried to navigate to while there were unsaved changes. */
   const [leaveTo, setLeaveTo] = useState<string | null>(null)
   const svgRef = useRef<SVGSVGElement>(null)
+  const barRef = useRef<HTMLElement>(null)
+  const [barH, setBarH] = useState(56)
+  // The toolbar floats over the page; side panels stick just below it, whatever height it wraps to.
+  useEffect(() => {
+    const el = barRef.current
+    if (!el) return
+    const ro = new ResizeObserver(() => setBarH(el.offsetHeight))
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
   const drag = useRef<Drag | null>(null)
   const dirtyRef = useRef(h.dirty)
   const routeRef = useRef(h.route)
@@ -228,8 +239,8 @@ function EditorInner({ inst, initial, reg }: { inst: Instance; initial: Route; r
 
   const handles = sel && sel.kind !== 'marker' ? sel.el.points : []
   return (
-    <main className="editor">
-      <header className="editor-bar">
+    <main className="editor" style={{ '--bar-h': `${barH}px` } as React.CSSProperties}>
+      <header className="editor-bar" ref={barRef}>
         <a href={`#/i/${inst.slug}`}>← {inst.name}</a>
         <span className="dev-badge">DEV EDITOR</span>
         <div className="tools" role="toolbar">

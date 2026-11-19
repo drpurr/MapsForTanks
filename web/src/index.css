@@ -11,6 +11,7 @@
   --ink-red: #ff6b5e;
   --ink-cyan: #4cc9e6;
   --ink-yellow: #f6dc84;
+  --ink-orange: #ffa552;
   --danger: #ff8a7a;
 
   /* 1.25 scale on a 17px condensed base */
@@ -105,10 +106,10 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 .nomap p { font-family: var(--hand); font-size: var(--t-xl); color: var(--lichen); max-width: 22ch; margin: 0; line-height: 1.2; }
 
 /* ---------- instance ---------- */
-.instance { max-width: 1240px; margin: 0 auto; padding: 24px 24px 56px; min-height: 60vh; }
+.instance { max-width: 1600px; margin: 0 auto; padding: 24px 24px 48px; min-height: 60vh; }
 .back { color: var(--lichen); text-decoration: none; }
 .back:hover { color: var(--lamplight); text-decoration: underline; }
-.instance-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px 32px; flex-wrap: wrap; margin: 10px 0 18px; }
+.instance-head { margin: 10px 0 18px; }
 .instance-head h1 { font-size: var(--t-3xl); line-height: 1; margin: 0; }
 .where { margin: 6px 0 0; color: var(--lichen); font-size: var(--t-md); }
 
@@ -129,8 +130,8 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 .other-maps button { font-size: var(--t-sm); padding: 3px 9px; color: var(--lichen); }
 .other-maps button[aria-current] { color: var(--stone-deep); background: var(--lamplight); border-color: var(--lamplight); }
 
-.instance-foot { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: baseline; margin-top: 14px; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 22px; list-style: none; margin: 0; padding: 0; color: var(--lichen); }
+.instance-foot { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 14px; text-align: center; }
+.legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px; list-style: none; margin: 0; padding: 0; color: var(--lichen); }
 .legend li { display: inline-flex; align-items: center; gap: 7px; }
 .legend svg { height: 22px; width: auto; overflow: visible; }
 .legend text { font: 700 11px var(--ui); text-anchor: middle; fill: var(--ink-cyan); }
@@ -138,11 +139,10 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 .lg-boundary { stroke: var(--ink-red); stroke-width: 4; stroke-linecap: round; }
 .lg-boss { fill: #12303a; stroke: var(--ink-cyan); stroke-width: 2; }
 .lg-boss.optional { stroke-dasharray: 3 2.5; }
-.lg-entrance { fill: var(--lamplight); }
-.legend li:last-child text { fill: var(--stone-deep); }
+.lg-los { font: 700 11px/1 var(--ui); color: var(--stone-deep); background: var(--ink-orange); border-radius: 4px; padding: 4px 6px; letter-spacing: 0.04em; }
+.lg-start { font: 21px/1 var(--hand); color: var(--ink-green); text-shadow: 0 0 3px rgba(36, 24, 8, 0.9); }
 .credit, .note { margin: 0; color: var(--lichen); max-width: 75ch; }
 .note { font-family: var(--hand); font-size: var(--t-md); color: var(--ink-yellow); }
-.instance-foot .edit-link { margin-left: auto; font-size: var(--t-sm); }
 
 /* ---------- map view ---------- */
 .mapview {
@@ -168,15 +168,20 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 .marker-boss circle { fill: #12303a; stroke: var(--ink-cyan); stroke-width: 2.5; }
 .marker-boss.optional circle { stroke-dasharray: 4 3; }
 .marker-boss text { fill: #c4f2ff; font: 700 15px var(--ui); }
-.marker-entrance path { fill: var(--lamplight); stroke: rgba(28, 18, 6, 0.9); stroke-width: 1.5; }
-.marker-entrance text { fill: var(--stone-deep); font: 700 15px var(--ui); }
+/* "Start" is lettered like the other annotations, in the route's green so it reads as the path's beginning */
+.marker-entrance text {
+  font: 25px var(--hand); fill: var(--ink-green); stroke: rgba(28, 18, 6, 0.9); stroke-width: 5px;
+  paint-order: stroke; stroke-linejoin: round;
+}
 .marker .hitbox { fill: transparent; }
+.marker-los rect { fill: var(--ink-orange); stroke: rgba(28, 18, 6, 0.85); stroke-width: 1.5; }
+.marker-los text { fill: var(--stone-deep); font: 700 13px var(--ui); letter-spacing: 0.04em; }
 .marker-transition text, .marker-note text {
   font: 21px var(--hand); fill: var(--ink-yellow); stroke: rgba(36, 24, 8, 0.85); stroke-width: 4.5px;
   paint-order: stroke; stroke-linejoin: round;
 }
 .marker-note text { fill: #f3efe2; }
-.marker.selected circle, .marker.selected path { stroke: #fff; stroke-width: 3; }
+.marker.selected circle, .marker.selected path, .marker-los.selected rect { stroke: #fff; stroke-width: 3; }
 .marker.selected .hitbox { stroke: #fff; stroke-dasharray: 4 3; stroke-width: 1.5; }
 
 /* the one motion moment: routes draw themselves in, then the markers settle */
@@ -193,8 +198,17 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 }
 
 /* ---------- editor (dev only) ---------- */
-.editor { padding: 8px 12px; }
-.editor-bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid var(--mortar); }
+.editor { padding: 0 12px 12px; }
+/* toolbar floats at the top while the page scrolls under it */
+.editor-bar {
+  position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  margin: 0 -12px; padding: 8px 12px; background: rgba(35, 44, 53, 0.94); backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--mortar); box-shadow: 0 6px 18px rgba(10, 14, 18, 0.35);
+}
+.editor-body > .sections, .editor-body > .inspector {
+  position: sticky; top: calc(var(--bar-h, 56px) + 10px);
+  max-height: calc(100vh - var(--bar-h, 56px) - 20px); overflow-y: auto; overscroll-behavior: contain;
+}
 .dev-badge { background: var(--ink-red); color: var(--stone-deep); font-size: var(--t-sm); font-weight: 700; padding: 1px 8px; border-radius: 4px; }
 .tools { display: flex; gap: 4px; flex-wrap: wrap; }
 .status { color: var(--lichen); font-size: var(--t-sm); }
@@ -234,6 +248,7 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
 /* ---------- small screens ---------- */
 @media (max-width: 960px) {
   .editor-body { grid-template-columns: 1fr; }
+  .editor-body > .sections, .editor-body > .inspector { position: static; max-height: none; overflow: visible; }
 }
 @media (max-width: 820px) {
   .book { padding: 20px 16px 40px; }
@@ -248,10 +263,34 @@ kbd { font: inherit; font-size: 0.75em; opacity: 0.65; margin-left: 3px; }
   .wordmark { font-size: var(--t-2xl); }
 }
 
-/* fit the whole map on screen: width is capped by the viewport height (map aspect 1002:668) */
-.instance > .mapview, .instance > .nomap { max-width: calc((100vh - 250px) * 1.5); min-width: min(100%, 640px); margin-inline: auto; }
 .instance > .nomap { aspect-ratio: auto; min-height: 220px; }
+
+/* zoomable map frame: as tall as the window allows; the map starts filled to its width */
+.zoom-stage {
+  position: relative; overflow: hidden; height: clamp(420px, calc(100vh - 236px), 1200px);
+  border-radius: 6px; background: var(--stone-deep); box-shadow: 0 1px 0 var(--mortar), 0 22px 48px rgba(10, 14, 18, 0.55);
+  cursor: grab; user-select: none;
+}
+.zoom-stage:active { cursor: grabbing; }
+.zoom-content { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
+.zoom-content .mapview { border-radius: 0; box-shadow: none; }
+.zoom-controls {
+  position: absolute; right: 12px; bottom: 12px; display: flex; gap: 0; z-index: 2;
+  border: 1px solid var(--mortar); border-radius: 7px; overflow: hidden; background: rgba(28, 36, 44, 0.9);
+  box-shadow: 0 4px 14px rgba(10, 14, 18, 0.45); cursor: default;
+}
+.zoom-controls button { border: 0; border-radius: 0; background: transparent; min-width: 38px; height: 36px; padding: 0 10px; font-size: var(--t-md); line-height: 1; }
+.zoom-controls button + button { border-left: 1px solid var(--mortar); }
+.zoom-controls button.whole { font-size: var(--t-sm); }
+.zoom-controls button:hover:not(:disabled) { background: var(--stone-raised); color: var(--lamplight); }
+.credit-line { margin: 18px 0 0; text-align: center; font-size: var(--t-sm); color: var(--lichen); }
 @media (max-width: 820px) {
   .contents .edit-link { display: none; }
-  .instance > .mapview { max-width: none; min-width: 0; }
+  .zoom-stage { height: auto; aspect-ratio: 1002 / 668; }
 }
+
+/* error and load-failure screens */
+.problem { max-width: 60ch; margin: 12vh auto 0; padding: 0 16px; }
+.problem h1 { font-size: var(--t-2xl); line-height: 1.1; margin: 0 0 12px; }
+.problem p { margin: 0 0 12px; font-size: var(--t-md); }
+.problem code { font-size: 0.9em; color: var(--lamplight); }

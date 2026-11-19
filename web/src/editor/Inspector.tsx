@@ -29,7 +29,8 @@ export function Inspector({ inst, route, secId, selected, edit, setSelected, ver
           <legend>Marker</legend>
           <label>Type
             <select value={found.el.type} onChange={(e) => withEl<typeof found.el>((m) => { m.type = e.target.value as typeof m.type })}>
-              {['boss', 'entrance', 'transition', 'note'].map((t) => <option key={t}>{t}</option>)}
+              {[['boss', 'Boss'], ['entrance', 'Start'], ['transition', 'Transition'], ['note', 'Note'], ['los', 'LOS pull']].map(([t, label]) =>
+                <option key={t} value={t}>{label}</option>)}
             </select>
           </label>
           <label>Order

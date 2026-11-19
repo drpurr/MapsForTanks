@@ -33,9 +33,17 @@ function MarkerGlyph({ m, size, sel }: { m: Marker; size: [number, number]; sel:
   if (m.type === 'entrance') {
     return (
       <g className={cls} transform={`translate(${x},${y})`}>
-        <path d="M0,-15 L13,8 L-13,8 z" />
-        <text dy="0.15em">!</text>
-        <title>Entrance</title>
+        <rect className="hitbox" x={-28} y={-15} width={56} height={30} rx={4} />
+        <text dy="0.32em">Start</text>
+      </g>
+    )
+  }
+  if (m.type === 'los') {
+    return (
+      <g className={cls} transform={`translate(${x},${y})`}>
+        <rect x={-20} y={-11} width={40} height={22} rx={5} />
+        <text dy="0.36em">LOS</text>
+        <title>Line-of-sight pull: stand here so casters come to you{m.text ? ` (${m.text})` : ''}</title>
       </g>
     )
   }

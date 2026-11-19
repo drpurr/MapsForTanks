@@ -33,7 +33,8 @@ export interface Boundary {
   points: Pt[]
 }
 
-export type MarkerType = 'boss' | 'entrance' | 'transition' | 'note'
+/** los = line-of-sight pull spot: break LOS here so casters come to you */
+export type MarkerType = 'boss' | 'entrance' | 'transition' | 'note' | 'los'
 
 export interface Marker {
   id: string

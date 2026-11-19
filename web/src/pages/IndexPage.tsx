@@ -47,7 +47,7 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
     return () => { live = false }
   }, [shown, routed])
 
-  const sec = route?.instance === shown?.slug ? route.sections[0] : undefined
+  const sec = shown && route && route.instance === shown.slug ? route.sections[0] : undefined
   const base = shown ? (sec ? sectionBase(shown, sec) : sectionBase(shown, { floor: 1 })) : null
 
   return (
