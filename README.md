@@ -23,7 +23,7 @@ uv run python extract_routes.py               # 3. CV: paths, arrows, boundaries
 uv run python vision_sheets.py                # 4. sheets for reading numbers/labels -> data/extract/*/*.labels.json
 uv run python build_routes.py                 # 5. merge + validate -> data/routes (never overwrites reviewed routes)
 ```
-Instance ↔ art ↔ source mapping lives in `tools/aliases.json` (`_skip` excludes map ids).
+Instance ↔ art ↔ source mapping lives in `tools/aliases.json` (`_skip` excludes map ids; `split` lists one site entry per wing, as for Scarlet Monastery).
 
 ## Web
 ```sh

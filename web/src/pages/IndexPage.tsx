@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { MapView } from '../components/MapView'
 import { RouteOverlay } from '../components/RouteOverlay'
 import { loadRoute, routeSummary, sectionBase } from '../data'
+import crest from '../assets/crest.webp'
 import type { Instance, Route } from '../types'
 
 type Filter = 'all' | 'routes' | 'raid'
@@ -53,7 +54,7 @@ export function IndexPage({ instances, routed }: { instances: Instance[]; routed
   return (
     <div className="book">
       <header className="masthead">
-        <h1 className="wordmark">Tank Maps</h1>
+        <h1 className="wordmark"><img src={crest} alt="Tank Maps" width={135} height={180} /></h1>
         <p className="lede">Pull routes for every WoW Forever dungeon and raid, drawn on the in-game maps.</p>
         <div className="controls">
           <label className="search">

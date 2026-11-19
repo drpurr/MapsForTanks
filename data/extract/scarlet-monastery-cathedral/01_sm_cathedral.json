@@ -1,7 +1,7 @@
 {
  "image": "maps-src/Tirisfal Glades/The Scarlet Monastery - The Cathedral/01_sm_cathedral.jpg",
- "instance": "scarlet-monastery",
- "floor": 4,
+ "instance": "scarlet-monastery-cathedral",
+ "floor": 1,
  "floorSize": [
   1002,
   668
@@ -139,7 +139,7 @@
      0.6272
     ],
     [
-     0.5369,
+     0.5379,
      0.6272
     ],
     [

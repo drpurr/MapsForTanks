@@ -95,36 +95,57 @@ async function main() {
     .filter(([id, r]) => (r.InstanceType === 1 || r.InstanceType === 2) && !skip.has(id));
   const names = rows.map(([, r]) => r.MapName_lang);
   const used = new Set(), instances = [], missing = [];
+  const tmp = join(tmpdir(), `tankmaps-${process.pid}`);
+  /** Record an instance's floors; stitch the images only if it's selected (or no --only given). */
+  const addInstance = async (inst, groups, selected) => {
+    const outDir = join(DATA, "maps", inst.slug);
+    if (selected) mkdirSync(outDir, { recursive: true });
+    for (const [i, g] of groups.entries()) {
+      const n = i + 1;
+      if (selected) await stitch(driver, g.tiles, tmp, join(outDir, String(n)));
+      inst.floors.push({ floor: n, artFloor: g.floor, label: `Floor ${n}`, image: `maps/${inst.slug}/${n}.webp`, ...CROP });
+    }
+    if (selected) console.log(`${inst.slug}: ${inst.floors.length} floor(s) from ${inst.art}`);
+    instances.push(inst);
+  };
+
   for (const [id, r] of rows) {
     const a = aliases[String(id)] ?? {};
     const candidates = a.art ?? [...art.keys()].filter((d) => [norm(r.MapName_lang), norm(r.Directory)].includes(norm(d)));
     const dir = candidates.find((d) => art.has(d));
     const dup = names.filter((n) => n === r.MapName_lang).length > 1;
     const slug = slugify(r.MapName_lang) + (dup ? `-${id}` : "");
-    const inst = {
-      slug, mapId: id, name: r.MapName_lang, directory: r.Directory,
-      type: r.InstanceType === 2 ? "raid" : "dungeon", zone: a.zone ?? null,
-      art: dir ?? null, sources: a.src ?? [], floors: [],
+    const base = {
+      mapId: id, directory: r.Directory, type: r.InstanceType === 2 ? "raid" : "dungeon",
+      zone: a.zone ?? null, art: dir ?? null,
     };
-    if (!dir) { missing.push({ slug, mapId: id, name: inst.name, tried: candidates }); instances.push(inst); continue; }
-    used.add(dir);
-    if (only && only !== slug && only !== String(id)) { instances.push(inst); continue; }
-    const outDir = join(DATA, "maps", slug);
-    mkdirSync(outDir, { recursive: true });
-    const tmp = join(tmpdir(), `tankmaps-${process.pid}`);
-    for (const [i, g] of art.get(dir).entries()) {
-      const n = i + 1;
-      await stitch(driver, g.tiles, tmp, join(outDir, String(n)));
-      inst.floors.push({ floor: n, artFloor: g.floor, label: `Floor ${n}`, image: `maps/${slug}/${n}.webp`, ...CROP });
+    if (!dir) {
+      missing.push({ slug, mapId: id, name: r.MapName_lang, tried: candidates });
+      instances.push({ slug, name: r.MapName_lang, ...base, sources: a.src ?? [], floors: [] });
+      continue;
     }
-    rmSync(tmp, { recursive: true, force: true });
-    console.log(`${slug}: ${inst.floors.length} floor(s) from ${dir}`);
-    instances.push(inst);
+    used.add(dir);
+    if (a.split) {
+      // One site entry per wing, each with its single game floor as floor 1.
+      for (const [pi, part] of a.split.entries()) {
+        const s = slugify(part.name);
+        const groups = art.get(dir).filter((g) => g.floor === part.artFloor);
+        if (!groups.length) throw new Error(`${part.name}: art floor ${part.artFloor} not found in ${dir}`);
+        // sortName keeps wings together in the order listed in aliases.json (the run order), not A-Z.
+        await addInstance({ slug: s, name: part.name, sortName: `${r.MapName_lang} ${pi}`, ...base, sources: part.src ?? [], floors: [] }, groups,
+          !only || only === s || only === String(id));
+      }
+      continue;
+    }
+    await addInstance({ slug, name: r.MapName_lang, ...base, sources: a.src ?? [], floors: [] }, art.get(dir),
+      !only || only === slug || only === String(id));
   }
+  rmSync(tmp, { recursive: true, force: true });
 
   const unmatched = [...art.keys()].filter((d) => !used.has(d)).sort()
     .map((d) => ({ dir: d, floors: art.get(d).length }));
-  instances.sort((x, y) => x.name.localeCompare(y.name));
+  instances.sort((x, y) => (x.sortName ?? x.name).localeCompare(y.sortName ?? y.name));
+  for (const i of instances) delete i.sortName;
   writeFileSync(join(DATA, "instances.json"), JSON.stringify({ build: "forever", instances }, null, 2) + "\n");
   writeFileSync(join(DATA, "missing.json"), JSON.stringify(missing, null, 2) + "\n");
   writeFileSync(join(DATA, "unmatched-art.json"), JSON.stringify(unmatched, null, 2) + "\n");

@@ -3,6 +3,7 @@ import { MapView } from '../components/MapView'
 import { RouteOverlay } from '../components/RouteOverlay'
 import { ZoomPan } from '../components/ZoomPan'
 import { loadRoute, routeSummary, sectionBase } from '../data'
+import crestSmall from '../assets/crest-small.webp'
 import type { Instance, Route } from '../types'
 
 type View = { kind: 'section'; id: string } | { kind: 'floor'; floor: number }
@@ -27,7 +28,7 @@ export function InstancePage({ inst }: { inst: Instance }) {
 
   return (
     <main className="instance">
-      <a href="#/" className="back">Back to all dungeons</a>
+      <a href="#/" className="back"><img src={crestSmall} alt="" width={33} height={44} />Back to all dungeons</a>
       <header className="instance-head">
         <h1>{inst.name}</h1>
         <p className="where">

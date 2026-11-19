@@ -1,0 +1,198 @@
+{
+ "instance": "scarlet-monastery-graveyard",
+ "mapId": 189,
+ "source": "mapsfortanks",
+ "reviewed": false,
+ "sections": [
+  {
+   "id": "01_sm_graveyard",
+   "title": "Graveyard",
+   "floor": 1,
+   "sourceImage": "maps-src/Tirisfal Glades/The Scarlet Monastary - The Graveyard/01_sm_graveyard.jpg",
+   "path": [
+    {
+     "id": "p0",
+     "points": [
+      [
+       0.5569,
+       0.5599
+      ],
+      [
+       0.3752,
+       0.5554
+      ]
+     ],
+     "arrow": "end"
+    },
+    {
+     "id": "p1",
+     "points": [
+      [
+       0.3463,
+       0.5599
+      ],
+      [
+       0.2695,
+       0.5644
+      ]
+     ],
+     "arrow": "end"
+    },
+    {
+     "id": "p2",
+     "points": [
+      [
+       0.6427,
+       0.5778
+      ],
+      [
+       0.6387,
+       0.5599
+      ],
+      [
+       0.5848,
+       0.5599
+      ]
+     ],
+     "arrow": "end"
+    },
+    {
+     "id": "p3",
+     "points": [
+      [
+       0.6986,
+       0.5943
+      ],
+      [
+       0.6547,
+       0.5973
+      ]
+     ],
+     "arrow": "end"
+    },
+    {
+     "id": "p4",
+     "points": [
+      [
+       0.7575,
+       0.7036
+      ],
+      [
+       0.7575,
+       0.6692
+      ],
+      [
+       0.7555,
+       0.6617
+      ],
+      [
+       0.7505,
+       0.6557
+      ],
+      [
+       0.7275,
+       0.6557
+      ],
+      [
+       0.7246,
+       0.6392
+      ]
+     ],
+     "arrow": "end"
+    },
+    {
+     "id": "p5",
+     "points": [
+      [
+       0.8313,
+       0.8114
+      ],
+      [
+       0.8303,
+       0.7964
+      ],
+      [
+       0.8244,
+       0.7904
+      ],
+      [
+       0.7585,
+       0.7919
+      ],
+      [
+       0.7575,
+       0.735
+      ]
+     ],
+     "arrow": "end"
+    }
+   ],
+   "boundaries": [
+    {
+     "id": "r0",
+     "points": [
+      [
+       0.262,
+       0.5838
+      ],
+      [
+       0.262,
+       0.5389
+      ]
+     ]
+    },
+    {
+     "id": "r1",
+     "points": [
+      [
+       0.7011,
+       0.5793
+      ],
+      [
+       0.7033,
+       0.6198
+      ]
+     ]
+    }
+   ],
+   "markers": [
+    {
+     "id": "m-entrance",
+     "type": "entrance",
+     "pos": [
+      0.875,
+      0.82
+     ]
+    },
+    {
+     "id": "m-b1",
+     "type": "boss",
+     "pos": [
+      0.755,
+      0.575
+     ],
+     "order": 1
+    },
+    {
+     "id": "m-b0",
+     "type": "boss",
+     "pos": [
+      0.2625,
+      0.4873
+     ],
+     "order": 2
+    },
+    {
+     "id": "m-y0",
+     "type": "note",
+     "pos": [
+      0.1856,
+      0.6706
+     ],
+     "text": "End!"
+    }
+   ],
+   "sourceUrl": "https://mapsfortanks.wordpress.com/2011/09/30/scarlet-monastery-the-graveyard/"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "image": "maps-src/Tirisfal Glades/The Scarlet Monastary - The Graveyard/01_sm_graveyard.jpg",
- "instance": "scarlet-monastery",
+ "instance": "scarlet-monastery-graveyard",
  "floor": 1,
  "floorSize": [
   1002,
@@ -54,7 +54,7 @@
    "points": [
     [
      0.6986,
-     0.5943
+     0.5958
     ],
     [
      0.6547,

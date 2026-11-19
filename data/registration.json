@@ -759,11 +759,11 @@
   "method": "sift"
  },
  "maps-src/Tirisfal Glades/The Scarlet Monastary - The Graveyard/01_sm_graveyard.jpg": {
-  "instance": "scarlet-monastery",
+  "instance": "scarlet-monastery-graveyard",
   "floor": 1,
   "ok": true,
-  "inliers": 1037,
-  "ratio": 0.958,
+  "inliers": 1053,
+  "ratio": 0.95,
   "size": [
    1174,
    762
@@ -774,29 +774,29 @@
   ],
   "H": [
    [
-    0.85338498,
-    7.897e-05,
-    1.02333176
+    0.85331652,
+    0.00010661,
+    1.02847432
    ],
    [
-    -4.31e-05,
-    0.87490131,
-    -0.83007201
+    -7.094e-05,
+    0.87486344,
+    -0.80745675
    ],
    [
-    1e-08,
-    1.1e-07,
+    -1.1e-07,
+    2.3e-07,
     1.0
    ]
   ],
   "method": "sift"
  },
  "maps-src/Tirisfal Glades/The Scarlet Monastery - The Library/01_sm_library.jpg": {
-  "instance": "scarlet-monastery",
-  "floor": 2,
+  "instance": "scarlet-monastery-library",
+  "floor": 1,
   "ok": true,
-  "inliers": 1527,
-  "ratio": 0.959,
+  "inliers": 1506,
+  "ratio": 0.956,
   "size": [
    1174,
    762
@@ -807,29 +807,29 @@
   ],
   "H": [
    [
-    0.85326425,
-    9.888e-05,
-    1.04984356
+    0.85331363,
+    0.00013314,
+    1.02087344
    ],
    [
-    -5.024e-05,
-    0.87479399,
-    1.82577651
+    -5.011e-05,
+    0.87478844,
+    1.83571821
    ],
    [
-    -8e-08,
-    1.3e-07,
+    -5e-08,
+    1.5e-07,
     1.0
    ]
   ],
   "method": "sift"
  },
  "maps-src/Tirisfal Glades/The Scarlet Monastery - The Armory/01_sm_arm.jpg": {
-  "instance": "scarlet-monastery",
-  "floor": 3,
+  "instance": "scarlet-monastery-armory",
+  "floor": 1,
   "ok": true,
-  "inliers": 988,
-  "ratio": 0.945,
+  "inliers": 1009,
+  "ratio": 0.94,
   "size": [
    1174,
    762
@@ -840,29 +840,29 @@
   ],
   "H": [
    [
-    0.8533897,
-    -3.143e-05,
-    0.1894503
+    0.85337085,
+    -3.259e-05,
+    0.1945875
    ],
    [
-    -3.34e-06,
-    0.87484299,
-    2.67596548
+    -1.365e-05,
+    0.87482344,
+    2.68470847
    ],
    [
-    -0.0,
-    6e-08,
+    -1e-08,
+    5e-08,
     1.0
    ]
   ],
   "method": "sift"
  },
  "maps-src/Tirisfal Glades/The Scarlet Monastery - The Cathedral/01_sm_cathedral.jpg": {
-  "instance": "scarlet-monastery",
-  "floor": 4,
+  "instance": "scarlet-monastery-cathedral",
+  "floor": 1,
   "ok": true,
-  "inliers": 1305,
-  "ratio": 0.972,
+  "inliers": 1319,
+  "ratio": 0.97,
   "size": [
    1174,
    762
@@ -873,18 +873,18 @@
   ],
   "H": [
    [
-    0.85323816,
-    -0.00016317,
-    0.26531446
+    0.85330672,
+    -0.00012429,
+    0.2371212
    ],
    [
-    6.3e-07,
-    0.87454675,
-    0.97024266
+    2.611e-05,
+    0.87461067,
+    0.95030218
    ],
    [
-    -2e-08,
-    -2.5e-07,
+    2e-08,
+    -1.9e-07,
     1.0
    ]
   ],

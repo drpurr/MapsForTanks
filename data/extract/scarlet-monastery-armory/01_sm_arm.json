@@ -1,7 +1,7 @@
 {
  "image": "maps-src/Tirisfal Glades/The Scarlet Monastery - The Armory/01_sm_arm.jpg",
- "instance": "scarlet-monastery",
- "floor": 3,
+ "instance": "scarlet-monastery-armory",
+ "floor": 1,
  "floorSize": [
   1002,
   668
@@ -106,19 +106,19 @@
      0.5659
     ],
     [
-     0.7445,
-     0.5629
+     0.7455,
+     0.5539
     ],
     [
-     0.7435,
-     0.512
+     0.7445,
+     0.5075
     ],
     [
      0.7465,
      0.5045
     ],
     [
-     0.7695,
+     0.7685,
      0.503
     ]
    ],
